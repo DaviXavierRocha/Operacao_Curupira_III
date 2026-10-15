@@ -1,0 +1,627 @@
+=======================================
+ESPECIALIDADE: LOG
+=======================================
+
+### DESAFIO: Host VPN syslog - 10 pts
+Enunciado: Este syslog é o rastro de autenticação do concentrador atingido na Operação Relé, com força bruta externa e um login aceito na mesma janela em que a Transnorte ainda tratava o evento como rotina. Qual o hostname do equipamento que gerou o syslog? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Brute SSH - 10 pts
+Enunciado: Nas linhas event=failed_password deste syslog, a força bruta externa concentra as falhas numa única origem da faixa de documentação. Qual IP externo gerou o maior número de event=failed_password? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Conta no brute - 10 pts
+Enunciado: Depois da chuva de falhas, o mesmo IP da força bruta teve um event=accepted_password neste syslog. Qual usuário teve event=accepted_password a partir do IP da força bruta? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 no syslog - 10 pts
+Enunciado: O accepted_password desse IP ainda registra o src_host que a vítima apresentou no login bem-sucedido. Qual src_host aparece no login bem-sucedido desse IP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Porta origem VPN - 10 pts
+Enunciado: A porta de origem (port=) desse accepted_password fecha a sessão da força bruta no concentrador. Qual a porta de origem (port=) desse accepted_password? Padrão da resposta: valor direto. Exemplo: 1234
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hora do VPN - 10 pts
+Enunciado: O horário UTC do accepted_password vindo de 198.51.100.88 marca a virada da força bruta em acesso na Relé. Qual o timestamp UTC do accepted_password vindo de 198.51.100.88? Padrão da resposta: valor direto. Exemplo: 2026-01-01T00:00:00Z
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PID da sessão - 10 pts
+Enunciado: O pid= do sshd nesse accepted_password de 198.51.100.88 amarra a sessão aceita no host. Qual o pid= do accepted_password vindo de 198.51.100.88? Padrão da resposta: valor direto. Exemplo: 1234
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Sudo no syslog - 10 pts
+Enunciado: Depois do acesso, alguém elevou privilégio com sudo no mesmo host deste syslog. Qual usuário executou event=sudo? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Comando sudo - 10 pts
+Enunciado: O cmd= passado ao sudo é o que o operador ou o implante rodou com root neste concentrador. Qual o cmd= executado via sudo? Padrão da resposta: valor direto. Exemplo: /bin/x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: TTY sudo - 10 pts
+Enunciado: O tty= do evento sudo diz se essa elevação veio de sessão interativa no host da Relé. Qual o tty= do evento sudo? Padrão da resposta: valor direto. Exemplo: pts/0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User inventado - 10 pts
+Enunciado: A força bruta também tentou contas que o host nem tinha, e um user= se repete em event=invalid_user. Qual user= mais aparece em event=invalid_user? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Aviso syslog - 10 pts
+Enunciado: Uma linha event=notice deste syslog carrega a marca do caso no campo msg=, fora do ruído de sshd. Qual a flag no campo msg= de event=notice? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: VPN da estação - 10 pts
+Enunciado: Houve um event=vpn_connect no mesmo syslog, já depois da senha aceita na força bruta. Qual usuário fez event=vpn_connect? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Origem VPN - 10 pts
+Enunciado: O src= desse vpn_connect é o IP de onde o túnel foi montado no concentrador da Transnorte. Qual src= do event=vpn_connect? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Scan no syslog - 10 pts
+Enunciado: Além do C2, um IP interno da Transnorte também aparece em failed_password neste syslog. Qual IP interno 10.50.10.88 aparece em failed_password? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Volume brute - 10 pts
+Enunciado: A contagem de event=failed_password de 198.51.100.88 mede o volume da força bruta neste recorte. Quantas linhas de event=failed_password vem de 198.51.100.88? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Chave OCC syslog - 10 pts
+Enunciado: A estação de finanças 10.50.10.42 também autenticou por chave, com user= no accepted_publickey. Qual user= teve accepted_publickey a partir de 10.50.10.42? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cron do aviso - 10 pts
+Enunciado: Os jobs CRON deste host ainda mostram qual conta o agendador usou no recorte da Relé. Qual user= aparece nos jobs CRON? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Facility SSH - 10 pts
+Enunciado: As linhas proc=sshd da força bruta compartilham a mesma facility= neste syslog. Qual facility= das linhas proc=sshd do brute force? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: sessão aberta - 10 pts
+Enunciado: O event=session_opened registra quem de fato abriu a sessão depois do accepted_password. Qual user= em event=session_opened? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Iface VPN - 10 pts
+Enunciado: O vpn_connect nomeia a interface de túnel usada nesse acesso ao concentrador. Qual tun= no event=vpn_connect? Padrão da resposta: valor direto. Exemplo: tun0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cwd sudo - 10 pts
+Enunciado: O cwd= do sudo mostra de que diretório o comando elevado foi disparado. Qual cwd= do evento sudo? Padrão da resposta: valor direto. Exemplo: /home/x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Proc do aviso - 10 pts
+Enunciado: O proc= da linha notice amarra a flag a um daemon específico, não ao sshd da força bruta. Qual proc= gerou event=notice com a flag? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: OpenVPN - 10 pts
+Enunciado: O proc= do vpn_connect identifica o binário que montou o túnel neste syslog. Qual proc= do event=vpn_connect? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Link tunel - 10 pts
+Enunciado: As linhas proc=kernel event=link registram o state= da interface no incidente da Relé. Qual state= aparece nas linhas proc=kernel event=link? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Unit OpenVPN - 10 pts
+Enunciado: O systemd registrou a unit do OpenVPN no mesmo host deste syslog. Qual unit= openvpn nas linhas systemd? Padrão da resposta: valor direto. Exemplo: x.service
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação OCC - 10 pts
+Enunciado: Este access log Apache é o do portal OCC/IndusCom visto pela estação de finanças na Campanha Relé, com login, download das release notes e o heartbeat que não é de navegador. Qual IP fez o POST em /api/auth/login? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador OCC - 10 pts
+Enunciado: A linha desse POST ainda registra o usuário que o portal OCC aceitou no login da Relé. Qual usuário autenticado nesse POST de login? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Status login OCC - 10 pts
+Enunciado: O status HTTP da resposta diz se o login em /api/auth/login passou ou foi rejeitado neste access log. Qual o status HTTP do POST em /api/auth/login? Padrão da resposta: valor direto. Exemplo: 200
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hora login OCC - 10 pts
+Enunciado: O horário UTC desse POST marca quando a estação de trabalho autenticou no portal, no recorte da Relé. Qual o timestamp UTC do POST de login? Padrão da resposta: valor direto. Exemplo: 2026-01-01T00:00:00Z
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Referer login OCC - 10 pts
+Enunciado: O Referer do POST mostra de qual página do portal o login do OCC foi enviado. Qual o referer do POST de login? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Notes Apache - 10 pts
+Enunciado: O GET das release notes deixa o path que a estação de trabalho usou para baixar o boletim da IndusCom. Qual o path do download IndusCom_ReleaseNotes? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Vhost notes - 10 pts
+Enunciado: O Host desse GET denuncia o vhost em que o boletim da IndusCom estava servido. Qual o vhost (campo Host) do download das release notes? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Tam. notes - 10 pts
+Enunciado: O tamanho enviado nesse GET fecha o objeto que a estação de trabalho salvou como release notes. Quantos bytes foram enviados nesse download das release notes? Padrão da resposta: valor direto. Exemplo: 100
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Updater Apache - 10 pts
+Enunciado: No mesmo access log, /v1/heartbeat é batido por um User-Agent que não é Chrome nem Firefox. Qual User-Agent não é navegador aparece em /v1/heartbeat? Envie no formato CTF{User-Agent}. Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx/x.x}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Beacon Apache - 10 pts
+Enunciado: O path do heartbeat no Apache é o equivalente em log do URI periódico visto no pcap da Transnorte. Qual o path do beacon HTTP no Apache? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Vhost beacon - 10 pts
+Enunciado: O Host do GET /v1/heartbeat é o vhost da CDN ou do portal usado pelo pulso do Obsidian. Qual o vhost do GET /v1/heartbeat? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Primeiro beacon - 10 pts
+Enunciado: O primeiro GET /v1/heartbeat neste access log marca quando o canal periódico acordou. Qual o timestamp UTC do primeiro GET /v1/heartbeat? Padrão da resposta: valor direto. Exemplo: 2026-01-01T00:00:00Z
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: WPAD Apache - 10 pts
+Enunciado: A estação também pediu WPAD neste access log, com path próprio de autoconfig de proxy. Qual o path WPAD pedido neste access log? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Vhost WPAD - 10 pts
+Enunciado: O Host do WPAD neste log denuncia o nome usado na autoconfig de proxy da Transnorte. Qual o vhost do pedido WPAD? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Varredura 404 - 10 pts
+Enunciado: Alguém no segmento gerou a maior parte das respostas 404, como varredura de path no portal. Qual IP gerou o maior número de respostas 404? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Volume 404 - 10 pts
+Enunciado: A contagem de 404 de 10.50.10.88 mede o volume dessa varredura interna neste access log. Quantas linhas 404 vem de 10.50.10.88? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Ferramenta OT - 10 pts
+Enunciado: Um path específico respondeu 401, o ponto em que a autenticação do portal falhou. Qual o path que devolveu HTTP 401? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Vhost OT - 10 pts
+Enunciado: O Host da linha 401 denuncia em qual vhost a autenticação foi recusada. Qual o vhost da resposta 401? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User OT - 10 pts
+Enunciado: A linha 401 ainda registra o usuário tentado nesse path do portal. Qual usuário aparece na linha do 401? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Webshell Apache - 10 pts
+Enunciado: O C2 198.51.100.88 também aparece neste access log, pedindo um path específico. Qual path o IP 198.51.100.88 requisitou? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Query webshell - 10 pts
+Enunciado: O pedido a /vendor/sync.php carrega a query string do canal de sync do vendor. Qual query string o C2 enviou em /vendor/sync.php? Padrão da resposta: valor direto. Exemplo: a=b
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Build escondido - 10 pts
+Enunciado: O path escondido /vendor/.sync/build ainda leva a marca do caso na query string. Qual a flag na query string de /vendor/.sync/build? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Dashboard OCC - 10 pts
+Enunciado: Depois do POST de login, o cliente pediu o dashboard do OCC neste access log. Qual o path do dashboard OCC acessado após o login? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Metodo login - 10 pts
+Enunciado: O método da linha de /api/auth/login confirma se foi POST de formulário ou outro verbo. Qual o metodo HTTP usado em /api/auth/login? Padrão da resposta: valor direto. Exemplo: GET
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Scanner UA - 10 pts
+Enunciado: Os 404 de 10.50.10.88 compartilham um User-Agent de ferramenta, não de mesa. Qual User-Agent o IP 10.50.10.88 usou nos 404? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Next login - 10 pts
+Enunciado: O POST de login também carregou query string além do corpo neste access log. Qual a query string do POST de login? Padrão da resposta: valor direto. Exemplo: a=b
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Host Defender - 10 pts
+Enunciado: Este log é o antivírus da estação de finanças da Transnorte atingida na Campanha Relé, o primeiro alarme de host contra o updater da IndusCom e o webshell que veio no mesmo pacote. Qual hostname aparece no campo host=? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP Defender - 10 pts
+Enunciado: O src_ip= das detecções amarra o alerta à estação de finanças, não a um servidor. Qual src_ip= da estação nas detecções de malware? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Produto Defender - 10 pts
+Enunciado: O product= diz qual motor de AV ou EDR escreveu estas linhas na estação de trabalho da Transnorte. Qual product= gerou o log? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Ameaca principal - 7 pts
+Enunciado: A ameaça nomeada no updater é a família que o Defender usou para o binário da IndusCom. Qual threat= associado ao updater da IndusCom? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path updater - 10 pts
+Enunciado: O path= aponta onde o Trojan ObsidianUpdater foi visto no disco da estação de trabalho de finanças. Qual path= do Trojan ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: C:/x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash updater - 10 pts
+Enunciado: O sha256= do update.exe fecha o binário que a estação de trabalho baixou como update da IndusCom. Qual sha256= do update.exe da IndusCom? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PID malware - 10 pts
+Enunciado: O pid= do processo ObsidianUpdater amarra a detecção à árvore que o Sysmon depois confirma. Qual pid= do processo ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: 1234
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Pai malware - 10 pts
+Enunciado: O parent= mostra quem lançou o updater no perfil da estação de trabalho de finanças. Qual parent= do updater? Padrão da resposta: valor direto. Exemplo: C:/x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Ação Defender - 10 pts
+Enunciado: A action= registra se o Defender bloqueou, quarentenou ou só alertou o ObsidianUpdater. Qual action= o Defender tomou no ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Severidade - 10 pts
+Enunciado: A severity= da primeira detecção do updater mede o peso que o produto deu ao alerta. Qual severity= da detecção ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Primeira detecção - 10 pts
+Enunciado: O horário UTC da primeira detecção marca quando o host finalmente viu o updater da IndusCom. Qual o timestamp UTC da primeira detecção do updater? Padrão da resposta: valor direto. Exemplo: 2026-01-01T00:00:00Z
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User logado - 10 pts
+Enunciado: O user= das detecções é a conta da estação de trabalho em que o binário do vendor rodou. Qual user= nas detecções de malware nesta estação? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 bloqueado - 10 pts
+Enunciado: O event=network_block registrou a URL que o host tentou alcançar depois do drop. Qual url= o Defender bloqueou no event=network_block? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP C2 Defender - 10 pts
+Enunciado: O dest= desse bloqueio é o IPv4 para o qual o updater tentou sair. Qual dest= do network_block? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Webshell Defender - 10 pts
+Enunciado: Além do updater, o AV nomeou um threat= para o PHP que veio no pacote do vendor. Qual threat= do webshell PHP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path webshell - 10 pts
+Enunciado: O path= do HackTool PHP é o sync.php no perfil ou webroot da estação de trabalho. Qual path= do HackTool PHP? Padrão da resposta: valor direto. Exemplo: C:/x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash webshell - 10 pts
+Enunciado: O sha256= do sync.php fecha o webshell que o canal /vendor usou na Relé. Qual sha256= do sync.php? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Motor Defender - 10 pts
+Enunciado: O engine= identifica a versão do motor nas linhas de detecção do ObsidianUpdater. Qual engine= nas detecções ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Assinaturas - 10 pts
+Enunciado: O signatures= fecha o pacote de assinaturas usado nessa detecção do updater. Qual signatures= nas detecções ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Classificação - 10 pts
+Enunciado: A classification= diz como o produto enquadrou o ObsidianUpdater nesta estação. Qual classification= do ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: RTP - 10 pts
+Enunciado: As linhas event=rtp_ok registram o estado da proteção em tempo real no host da Transnorte. Qual rtp= nas linhas event=rtp_ok? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PUA - 10 pts
+Enunciado: Houve detecções PUA além do Trojan, com threat= próprio neste log. Qual threat= das detecções PUA? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Volume updater - 10 pts
+Enunciado: A contagem de event=malware_detected com ObsidianUpdater mede quantas vezes o host alertou o mesmo binário. Quantas linhas event=malware_detected citam ObsidianUpdater? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Notes Defender - 10 pts
+Enunciado: O boletim da IndusCom também passou pelo AV e foi marcado clean, o contraste com o updater. Qual arquivo IndusCom_ReleaseNotes foi varrido como clean? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Nota do scan - 10 pts
+Enunciado: O scan clean das release notes ainda carrega a marca do caso no campo notes=. Qual a flag no campo notes= do scan das release notes? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Ação webshell - 10 pts
+Enunciado: A action= do HackTool PHP diz o que o Defender fez com o sync.php nesta estação. Qual action= no HackTool PHP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway SE-03 - 10 pts
+Enunciado: Este log é o gateway Modbus TCP da subestação SE-03 da Transnorte, o primeiro evento de campo da Campanha Relé, quando um IP da rede corporativa escreveu o setpoint no lugar do OCC. Qual hostname aparece no campo host=? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Produto ICG - 10 pts
+Enunciado: O product= identifica o software do gateway Modbus que estava na SE-03 neste log. Qual product= do gateway? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Fornecedor ICG - 10 pts
+Enunciado: O vendor= do equipamento confirma a IndusCom no hardware ou software da SE-03. Qual vendor= do equipamento? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Modelo ICG - 10 pts
+Enunciado: O model= fecha a família ICG usada no gateway desta subestação. Qual model= do gateway? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Site SE-03 - 10 pts
+Enunciado: O site= é o código operacional da subestação neste log de campo da Relé. Qual site= identifica a subestação? Padrão da resposta: valor direto. Exemplo: SE-00
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Protocolo OT - 10 pts
+Enunciado: O proto= das linhas confirma o protocolo industrial usado nos polls e nas escritas. Qual proto= nas linhas do log? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Porta 502 - 10 pts
+Enunciado: A dport= é a porta de serviço em que o mestre e o IP corporativo falaram com o gateway. Qual dport= do trafego? Padrão da resposta: valor direto. Exemplo: 123
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Mestre OCC - 10 pts
+Enunciado: O mestre que mais gerou event=poll_ok é o OCC legítimo neste log da SE-03. Qual src= gerou o maior número de event=poll_ok? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Escravo ICG - 10 pts
+Enunciado: O dest= dos polls do OCC é o IPv4 do gateway na SE-03. Qual dest= dos polls do mestre OCC? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Unit operacional - 10 pts
+Enunciado: O unit= das escritas write_single aponta o slave Modbus que recebeu o setpoint. Qual unit= nos event=write_single? Padrão da resposta: valor direto. Exemplo: 1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: FC escrita - 10 pts
+Enunciado: O function code das escritas single denuncia o tipo de holding escrito no gateway. Qual fc= nos event=write_single? Padrão da resposta: valor direto. Exemplo: 3
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Reg setpoint - 10 pts
+Enunciado: O addr= é o holding de setpoint que o OCC e o IP corporativo tocaram. Qual addr= alterado nos event=write_single? Padrão da resposta: valor direto. Exemplo: 40000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Setpoint ok - 10 pts
+Enunciado: O value= do OCC é o setpoint operacional esperado, antes da escrita anômala. Qual value= o mestre OCC escreveu no setpoint? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Setpoint anomalo - 10 pts
+Enunciado: O value= de 10.50.10.88 é o setpoint que não deveria ter vindo da rede corporativa. Qual value= escrito pelo IP da rede corporativa 10.50.10.88? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Origem comando - 10 pts
+Enunciado: Quem mais gerou event=write_single neste log não é ruído: é a origem das alterações de setpoint. Qual src= gerou o maior número de event=write_single? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: 1a escrita ruim - 10 pts
+Enunciado: O horário da primeira escrita de 10.50.10.88 marca o início do ensaio de campo na SE-03. Qual o timestamp UTC da primeira escrita do 10.50.10.88? Padrão da resposta: valor direto. Exemplo: 2026-01-01T00:00:00Z
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Transação MB - 10 pts
+Enunciado: O txn= da primeira escrita de 10.50.10.88 amarra o pedido Modbus anômalo neste log. Qual txn= da primeira escrita do 10.50.10.88? Padrão da resposta: valor direto. Exemplo: 0x1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Volume escrita - 10 pts
+Enunciado: A contagem de write_single de 10.50.10.88 mede quantas vezes o IP corporativo tocou o gateway. Quantas linhas event=write_single tem src=10.50.10.88? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Bobina - 10 pts
+Enunciado: Além do holding, houve write_coil com function code próprio neste log da SE-03. Qual fc= no event=write_coil? Padrão da resposta: valor direto. Exemplo: 5
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Endereço bobina - 10 pts
+Enunciado: O addr= da bobina é o ponto discreto alterado no ensaio de campo. Qual addr= do write_coil? Padrão da resposta: valor direto. Exemplo: 1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Valor bobina - 10 pts
+Enunciado: O value= da bobina é o estado forçado no coil durante o ensaio. Qual value= escrito na bobina? Padrão da resposta: valor direto. Exemplo: FF00
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Exceção MB - 10 pts
+Enunciado: O gateway também devolveu exception= para um pedido fora do mapa de pontos. Qual exception= no event=exception? Padrão da resposta: valor direto. Exemplo: 1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Unit ilegal - 10 pts
+Enunciado: O unit= da exception aponta qual slave rejeitou o pedido neste log. Qual unit= provocou a exception? Padrão da resposta: valor direto. Exemplo: 1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Probe C2 MB - 10 pts
+Enunciado: Houve um event=session_probe de uma origem que não é o OCC neste log da SE-03. Qual src= do event=session_probe? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Firmware ICG - 10 pts
+Enunciado: O firmware= no log fecha a versão do ICG que estava na SE-03 na Relé. Qual firmware= do gateway? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Diag do rele - 10 pts
+Enunciado: A linha de diagnóstico ainda carrega a marca do caso no campo notes= do event=diag. Qual a flag no campo notes= do event=diag? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

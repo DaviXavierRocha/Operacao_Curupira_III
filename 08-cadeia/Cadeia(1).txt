@@ -1,0 +1,171 @@
+=======================================
+ESPECIALIDADE: Cadeia
+=======================================
+
+### DESAFIO: Deb ICG-4200 - 10 pts
+Enunciado: Este icg4200.deb é o pacote IndusCom que a Transnorte puxou como update do ICG-4200 na Campanha Relé, o .deb que a estação de finanças tratou como firmware oficial do gateway. Qual o nome Package? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Versão deb - 10 pts
+Enunciado: A Version deste .deb é a mesma faixa que o vendor vendia como firmware 3.4 do ICG. Qual a Version do pacote? Padrão da resposta: valor direto. Exemplo: 1.0.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Maintainer - 10 pts
+Enunciado: O Maintainer no control tenta parecer suporte da IndusCom neste update da Transnorte. Qual o endereço de e-mail do Maintainer? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Homepage deb - 10 pts
+Enunciado: A Homepage deste pacote aponta o portal de firmware que o .deb declara, não o site público da IndusCom. Qual a Homepage do pacote? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: XB-Host - 10 pts
+Enunciado: O XB-Host no control amarra este .deb à estação da Transnorte que puxou o update. Qual o XB-Host no control? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Conf deb - 10 pts
+Enunciado: O path do .conf no pacote é o arquivo de canal que o .deb instala sob etc. Qual o path do arquivo .conf no pacote? Padrão da resposta: valor direto. Exemplo: ./etc/xxxx.conf
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 deb - 10 pts
+Enunciado: A URL C2 no conf deste .deb é o heartbeat que o ICG-4200 deveria chamar depois da instalação. Qual a URL C2 no conf do pacote? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Dropper deb - 10 pts
+Enunciado: O path do update.bin no pacote é o dropper que o .deb deixa sob usr, fora do conf. Qual o path do update.bin no pacote? Padrão da resposta: valor direto. Exemplo: ./usr/xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag deb - 10 pts
+Enunciado: O channel.txt deste .deb carrega a marca do caso do update ICG-4200. Qual a Flag no channel.txt do pacote? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: RPM DNS - 10 pts
+Enunciado: Este dns.rpm é o pacote IndusCom de manutenção DNS que chegou no NMS da Litoral Telecom na Campanha Relé, o RPM que o LIT-NMS-02 tratou como correção de zona. Qual o NAME do pacote? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Versão RPM - 10 pts
+Enunciado: A VERSION deste RPM é a faixa que o vendor colou no pacote de DNS da Litoral. Qual a VERSION do pacote? Padrão da resposta: valor direto. Exemplo: 1.0.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Vendor RPM - 10 pts
+Enunciado: O VENDOR deste RPM declara quem assina o pacote de manutenção DNS. Qual o VENDOR do pacote? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: URL RPM - 10 pts
+Enunciado: A URL deste RPM aponta o portal DNS falso que o pacote declara para a Litoral. Qual a URL do pacote? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Packager - 10 pts
+Enunciado: O PACKAGER deste RPM é o endereço que o vendor colocou como empacotador, não o helpdesk da Litoral. Qual o endereço de e-mail do PACKAGER? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Buildhost - 10 pts
+Enunciado: O BUILDHOST deste RPM denuncia a máquina em que o pacote DNS foi montado. Qual o BUILDHOST do pacote? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Conf RPM - 10 pts
+Enunciado: O path do .conf neste RPM é o arquivo de canal que o pacote instala em etc. Qual o path do arquivo .conf no pacote? Padrão da resposta: valor direto. Exemplo: /etc/xxxx.conf
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 RPM - 10 pts
+Enunciado: A URL C2 no conf deste RPM é o mesmo heartbeat que o update da Transnorte já usava. Qual a URL C2 no conf do pacote? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path dns-update - 10 pts
+Enunciado: O path do dns-update.bin neste RPM é o dropper que o NMS da Litoral receberia na instalação. Qual o path do dns-update.bin no pacote? Padrão da resposta: valor direto. Exemplo: /usr/xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag RPM - 10 pts
+Enunciado: O channel.txt deste RPM carrega a marca do caso do pacote DNS da Litoral. Qual a Flag no channel.txt do pacote? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Repo CLM - 10 pts
+Enunciado: Este clm-repo.tar é o dump do repositório IndusCom usado pela Câmara de Liquidação Mercantil na Campanha Relé, o InRelease e o pool que a estação de trabalho da CLM tratou como apt oficial. Qual o Origin no InRelease? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Label repo - 10 pts
+Enunciado: O Label no InRelease identifica a casa de liquidação neste repo falso. Qual o Label no InRelease? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Suite repo - 10 pts
+Enunciado: O Suite no InRelease nomeia a linha deste repo da Relé, não uma distro pública. Qual o Suite no InRelease? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Codename repo - 10 pts
+Enunciado: O Codename no InRelease aponta a subestação que o vendor colou neste InRelease. Qual o Codename no InRelease? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash clearsign - 10 pts
+Enunciado: O Hash do PGP SIGNED MESSAGE no InRelease é o algoritmo que o clearsign declara. Qual o Hash do PGP SIGNED MESSAGE no InRelease? Padrão da resposta: valor direto. Exemplo: SHA256
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SHA256 Packages - 10 pts
+Enunciado: O SHA256 do Packages declarado no InRelease é o hash que o repo vende para o índice. Qual o SHA256 do Packages declarado no InRelease? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Package CLM - 10 pts
+Enunciado: O Package do agente da CLM no Packages é o nome do agente que este repo oferece à Câmara. Qual o Package do agente da CLM no Packages? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Filename pool - 10 pts
+Enunciado: O Filename do pacote induscom-clm aponta o blob no pool, não um .deb clássico. Qual o Filename do pacote induscom-clm? Padrão da resposta: valor direto. Exemplo: pool/xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag repo - 10 pts
+Enunciado: A Flag no clm-agent.bin do pool é a marca deste repo da Câmara. Qual a Flag no clm-agent.bin do pool? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

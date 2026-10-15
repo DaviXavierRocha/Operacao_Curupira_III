@@ -1,0 +1,471 @@
+=======================================
+ESPECIALIDADE: PCAP
+=======================================
+
+### DESAFIO: Hostname TN-FIN - 10 pts
+Enunciado: Esse pcap foi capturado em uma das estações contaminadas durante a Operação Relé, na estação de trabalho de finanças da Transnorte, no mesmo momento em que o update da IndusCom já convivia com o tráfego interno do OCC. Qual o hostname enviado pela estação no DHCP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Lease TN-FIN - 10 pts
+Enunciado: Ainda no lease DHCP dessa estação de finanças da Transnorte, o ACK fixou o IPv4 que depois amarra beacon, FTP e o login do OCC neste pcap. Qual IPv4 a estação recebeu no DHCP ACK (yiaddr)? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: MAC TN-FIN - 10 pts
+Enunciado: No mesmo tráfego da estação 10.50.10.42, o endereço físico é o que liga o lease à placa da estação de trabalho atingida na Operação Relé. Qual o MAC da estação 10.50.10.42? Padrão da resposta: valor direto. Exemplo: xx:xx:xx:xx:xx:xx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway TN-FIN - 10 pts
+Enunciado: Na opção router desse DHCP da Transnorte aparece o salto padrão que a estação usou para sair da VLAN corporativa rumo à CDN da IndusCom. Qual o gateway anunciado na opção DHCP router? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: DNS TN-FIN - 10 pts
+Enunciado: O resolvedor entregue no mesmo lease é o DNS interno que depois responde cdn-sync e o TXT da Litoral neste pcap. Qual o servidor DNS anunciado no DHCP? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Dominio TN-FIN - 10 pts
+Enunciado: O domínio anunciado no DHCP confirma em qual floresta a estação de trabalho de finanças se encontrava quando o Obsidian já estava dentro da rede. Qual o domain name anunciado no DHCP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User FTP - 10 pts
+Enunciado: Depois do lease, a estação abriu um backup FTP em claro, com USER no canal de controle. Qual o usuário da sessão FTP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Senha FTP - 10 pts
+Enunciado: Na mesma sessão FTP em claro da estação de trabalho da Transnorte, o PASS veio sem TLS, logo após o USER. Qual a senha da sessão FTP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Mapa SE-03 - 10 pts
+Enunciado: O RETR dessa sessão puxou o arquivo que a conta de backup foi buscar no servidor interno, no contexto da Operação Relé. Qual o arquivo baixado via RETR no FTP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Host FTP - 10 pts
+Enunciado: O IPv4 de destino do controle e do RETR é o servidor FTP interno visto por essa estação contaminada. Qual o IP do servidor FTP? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Atualizador fantasma - 10 pts
+Enunciado: Além do Chrome, um agente periódico falava com a CDN da IndusCom como se fosse update, sem cara de navegador. Qual o User-Agent das requisições HTTP periódicas que não são de navegador? Envie no formato CTF{User-Agent}. Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: CDN falsa - 10 pts
+Enunciado: O pulso periódico desse agente ainda denuncia o vhost da CDN no cabeçalho Host. Qual o Host HTTP usado por esse beacon? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Heartbeat HTTP - 10 pts
+Enunciado: O caminho pedido nesse GET periódico é o heartbeat do canal, não uma página do portal OCC. Qual o URI requisitado no beacon? Padrão da resposta: valor direto. Exemplo: /xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Notes HTTP - 10 pts
+Enunciado: No mesmo pcap a estação de trabalho baixou as release notes da IndusCom e o corpo desse objeto ainda carrega a marca do caso. Qual a flag no corpo das release notes da IndusCom? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Inverno na intranet - 10 pts
+Enunciado: Houve um POST em claro para o login do OCC e o campo de senha estava no corpo desse pedido. Qual a senha enviada no POST de /api/auth/login? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: TXT backbone - 10 pts
+Enunciado: Fora da zona interna, uma resposta TXT de status.litoral-dns.net aparece neste pcap com conteúdo que não é diagnóstico de rede. Qual o conteúdo TXT de status.litoral-dns.net? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Sync vendor - 10 pts
+Enunciado: A estação também resolveu um nome cdn-sync da IndusCom no mesmo momento do beacon. Qual FQDN cdn-sync foi resolvido neste pcap? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP do sync - 10 pts
+Enunciado: A resposta A desse nome de suporte aponta o IPv4 usado no sync do vendor. Qual IPv4 foi retornado para cdn-sync.induscom-support.net? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: DNS falastrão - 10 pts
+Enunciado: Há ainda uma query DNS cujo primeiro rótulo não é hostname: é Base64 e começa com Q1RG, a assinatura de CTF{. Decodifique esse rótulo. Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SNI TLS TN - 10 pts
+Enunciado: O Client Hello para 198.51.100.91 ainda denuncia o nome TLS que o implante queria alcançar. Qual o SNI TLS usado nas conexões para 198.51.100.91? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: ICMP recado TN - 10 pts
+Enunciado: Houve um echo ICMP com payload textual, fora de qualquer diagnóstico de rede da Transnorte. Qual a flag no payload de um ICMP echo? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cookie OCC - 10 pts
+Enunciado: Depois do POST de login, o dashboard do OCC gravou a sessão em cookie claro. Qual o valor do cookie SESSIONID em /occ/dashboard? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Basic OT - 10 pts
+Enunciado: A ferramenta interna tools.transnorte.local ainda pedia HTTP Basic em claro neste pcap. Qual o par usuário:senha do HTTP Basic em tools.transnorte.local? Padrão da resposta: valor direto. Exemplo: user:pass
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Banner OT - 10 pts
+Enunciado: As respostas HTTP do portal do vendor ainda assinam o httpd da IndusCom no cabeçalho Server. Qual o cabeçalho Server HTTP do IndusCom HTTPD? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: WPAD TN - 10 pts
+Enunciado: A estação também pediu configuração de proxy e o Host do WPAD denuncia o nome interno usado na autoconfig. Qual o Host HTTP usado no pedido WPAD? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Scan interno TN - 10 pts
+Enunciado: Alguém no segmento interno da Transnorte varreu o host 10.50.10.20 com SYNs em muitas portas distintas. Qual IP interno enviou SYN para o maior número de portas distintas em 10.50.10.20? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hostname Litoral - 10 pts
+Enunciado: Este segundo pcap veio da estação NMS da Litoral Telecom na Operação Relé, o ponto em que backbone e DNS da operadora passam a falar com a mesma infraestrutura da IndusCom. Qual o hostname enviado pela estação no DHCP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Lease Litoral - 10 pts
+Enunciado: No lease DHCP desse NMS da Litoral, o ACK fixou o IPv4 que a estação 10.70.20.17 passou a usar no restante da captura. Qual IPv4 a estação recebeu no DHCP ACK? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: MAC Litoral - 10 pts
+Enunciado: O endereço físico amarra o NMS 10.70.20.17 ao tráfego de correio, tickets e DNS da operadora neste pcap. Qual o MAC da estação 10.70.20.17? Padrão da resposta: valor direto. Exemplo: xx:xx:xx:xx:xx:xx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway Litoral - 10 pts
+Enunciado: A opção router do DHCP da Litoral denuncia o salto padrão que o NMS usou para sair da VLAN de gestão. Qual o gateway anunciado na opção DHCP router? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: DNS Litoral - 10 pts
+Enunciado: O DNS entregue nesse lease é o resolvedor interno que depois responde MX, CNAME e o edge-check da IndusCom. Qual o servidor DNS anunciado no DHCP? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Dominio Litoral - 10 pts
+Enunciado: O domínio anunciado no DHCP confirma a floresta em que o NMS da Litoral se enxergava na Relé. Qual o domain name anunciado no DHCP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: MX backbone - 10 pts
+Enunciado: A query MX de litoral-telecom.net denuncia o relay que o SMTP desta captura usou para o boletim da campanha. Qual o mail exchange (MX) de litoral-telecom.net? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User SMTP - 10 pts
+Enunciado: O AUTH LOGIN do SMTP da Litoral foi em Base64, mas ainda é a conta do NMS autenticando no relay. Qual o usuário autenticado no SMTP AUTH LOGIN? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Senha SMTP - 10 pts
+Enunciado: O segundo passo desse AUTH LOGIN carrega a senha da mesma conta de correio, ainda em claro no momento. Qual a senha do SMTP AUTH LOGIN? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Destinatário SMTP - 10 pts
+Enunciado: O envelope SMTP aponta para quem receberia a mensagem nesta sessão do NMS. Qual o destinatário do RCPT TO? Padrão da resposta: valor direto. Exemplo: a@b.c
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Redirect portal - 10 pts
+Enunciado: O portal da Litoral redirecionou o cliente e o Location do 302 denuncia o próximo passo do fluxo. Qual o Location do HTTP 302 do portal? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Token ticket - 10 pts
+Enunciado: A API de tickets da operadora recebeu um token na query string, em claro, no pedido a /api/tickets. Qual o valor do parâmetro token na URI /api/tickets? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Syslog Litoral - 10 pts
+Enunciado: Uma linha de syslog nesta captura não é log de serviço da Litoral: carrega a marca do caso no payload. Qual a flag na mensagem syslog? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Community SNMP - 10 pts
+Enunciado: A consulta SNMP ao switch da operadora ainda usou community em claro neste pcap. Qual a community SNMP usada na consulta ao switch? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SNI TLS LIT - 10 pts
+Enunciado: O Client Hello para 198.51.100.76 denuncia o nome TLS do canal usado no lado da Litoral. Qual o SNI TLS usado nas conexões para 198.51.100.76? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: CNAME www - 10 pts
+Enunciado: O CNAME do portal público da operadora aponta para o nome real do edge, não para o nome que o usuário digitou. Para qual nome aponta o CNAME de www.litoral-telecom.net? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Runbook NMS - 10 pts
+Enunciado: Houve um GET em /files/ puxando um PDF no mesmo momento do NMS, no recorte da Relé. Qual o nome do PDF baixado em /files/? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User POP3 - 10 pts
+Enunciado: A sessão POP3 do NMS autenticou em claro com USER, no mesmo recorte de correio da Litoral. Qual o usuário da sessão POP3? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Senha POP3 - 10 pts
+Enunciado: O PASS do POP3 veio na sequência, ainda sem TLS, na mesma sessão de coleta de e-mail. Qual a senha da sessão POP3? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Banner SSH LIT - 10 pts
+Enunciado: O banner SSH do host interno 10.70.20.22 ainda assina a build do serviço visto pelo NMS. Qual o banner SSH do host 10.70.20.22? Padrão da resposta: valor direto. Exemplo: SSH-2.0-xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Agente NMS - 10 pts
+Enunciado: O portal da Litoral também foi acessado por um agente que não é navegador, assinado como LitoralNMS. Qual o User-Agent LitoralNMS visto no portal? Envie no formato CTF{User-Agent}. Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cookie NMS - 10 pts
+Enunciado: O cookie de sessão do NMS viajou em claro depois do acesso ao portal. Qual o valor do cookie NMSSESS? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Checagem duvidosa - 10 pts
+Enunciado: A estação da Litoral resolveu um nome edge-check da IndusCom no mesmo momento de tickets e DNS. Qual FQDN edge-check foi resolvido neste pcap? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP da checagem - 10 pts
+Enunciado: A resposta A desse edge-check aponta o IPv4 usado no check do vendor neste pcap. Qual IPv4 foi retornado para edge-check.induscom-support.net? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Referer NMS - 10 pts
+Enunciado: O pedido de tickets ainda carrega o Referer do portal interno da Litoral. Qual o Referer HTTP usado no pedido de tickets? Padrão da resposta: valor direto. Exemplo: http://xxxx.xxx/xxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Banner portal - 10 pts
+Enunciado: A resposta do edge da operadora assina LitoralEdge no cabeçalho Server. Qual o cabeçalho Server HTTP LitoralEdge? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hostname CLM - 10 pts
+Enunciado: Este pcap saiu da estação de trabalho da Câmara de Liquidação Mercantil na Operação Relé, no segmento em que o kit do Obsidian já autenticava na API interna da liquidação. Qual o hostname enviado pela estação no DHCP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Lease CLM - 10 pts
+Enunciado: No lease DHCP dessa estação de trabalho da CLM, o ACK fixou o IPv4 que a estação 10.90.30.11 passou a usar no bind, no MQTT e na API. Qual IPv4 a estação recebeu no DHCP ACK? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: MAC CLM - 10 pts
+Enunciado: O endereço físico amarra a estação de trabalho 10.90.30.11 ao tráfego LDAP, RADIUS e MQTT deste pcap. Qual o MAC da estação 10.90.30.11? Padrão da resposta: valor direto. Exemplo: xx:xx:xx:xx:xx:xx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway CLM - 10 pts
+Enunciado: A opção router do DHCP da CLM denuncia o salto padrão que a estação de trabalho usou para sair da VLAN da liquidação. Qual o gateway anunciado na opção DHCP router? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: DNS CLM - 10 pts
+Enunciado: O DNS entregue nesse lease é o resolvedor interno que depois responde o SRV de LDAP e o batch-sync da IndusCom. Qual o servidor DNS anunciado no DHCP? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Dominio CLM - 10 pts
+Enunciado: O domínio anunciado no DHCP confirma a floresta em que a estação de trabalho da CLM se enxergava na Relé. Qual o domain name anunciado no DHCP? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Bind LDAP - 10 pts
+Enunciado: Houve um bind LDAP simples em claro, com o DN da conta da estação de trabalho, sem SASL. Qual o DN usado no bind LDAP simples? Padrão da resposta: valor direto. Exemplo: cn=x,dc=y
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Senha LDAP - 10 pts
+Enunciado: A senha desse bind simples viajou no mesmo pacote, ainda em claro no momento da liquidação. Qual a senha do bind LDAP simples? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Arquivo TFTP - 10 pts
+Enunciado: Um RRQ TFTP pediu arquivo de configuração no segmento da CLM, no mesmo recorte do kit. Qual o arquivo pedido via TFTP RRQ? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User RADIUS - 10 pts
+Enunciado: O Access-Request RADIUS ainda mostra o User-Name da estação de trabalho em claro. Qual o User-Name do RADIUS Access-Request? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User MQTT - 10 pts
+Enunciado: O CONNECT MQTT da liquidação autenticou com username de operador no tópico de operação da CLM. Qual o username do MQTT CONNECT? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Senha MQTT - 10 pts
+Enunciado: A senha do MQTT veio no mesmo CONNECT, sem TLS, no canal que a estação de trabalho levantou depois do kit. Qual a senha do MQTT CONNECT? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Topico MQTT - 10 pts
+Enunciado: O PUBLISH aponta o tópico em que o agente da estação de trabalho publicou o recado da liquidação. Qual o topic do MQTT PUBLISH? Padrão da resposta: valor direto. Exemplo: a/b/c
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: ClientId MQTT - 10 pts
+Enunciado: O clientId identifica o agente MQTT que a estação de trabalho da CLM levantou neste pcap. Qual o clientId do MQTT CONNECT? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SRV LDAP - 10 pts
+Enunciado: O SRV de LDAP da CLM denuncia o host que a estação de trabalho deveria usar no bind. Qual o target do registro SRV _ldap._tcp.clm.local? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Porta SRV - 10 pts
+Enunciado: A porta anunciada nesse SRV é a que o bind da estação de trabalho deveria alcançar. Qual a porta do registro SRV LDAP? Padrão da resposta: valor direto. Exemplo: 999
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: API key CLM - 10 pts
+Enunciado: Os pedidos autenticados da API da CLM carregam Bearer em claro neste pcap. Qual o token Bearer enviado para a API? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: X-Forwarded-For - 10 pts
+Enunciado: O cabeçalho X-Forwarded-For denuncia o IP interno que o proxy viu na estação de trabalho da liquidação. Qual o IP em X-Forwarded-For? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SNI TLS CLM - 10 pts
+Enunciado: O Client Hello para 198.51.100.66 denuncia o nome TLS do canal da liquidação. Qual o SNI TLS usado nas conexões para 198.51.100.66? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: ICMP recado CLM - 10 pts
+Enunciado: Houve um echo ICMP com payload textual também neste pcap da CLM, fora de diagnóstico de rede. Qual a flag no payload de um ICMP echo? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cookie CLM - 10 pts
+Enunciado: O cookie de sessão da liquidação viajou nos pedidos HTTP da estação de trabalho. Qual o valor do cookie CLMSESS? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Sync liquidação - 10 pts
+Enunciado: A estação de trabalho resolveu um nome batch-sync da IndusCom no mesmo momento do MQTT e da API. Qual FQDN batch-sync foi resolvido neste pcap? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP do sync CLM - 10 pts
+Enunciado: A resposta A do batch-sync aponta o IPv4 do sync de lote da liquidação. Qual IPv4 foi retornado para batch-sync.induscom-support.net? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Agente CLM - 10 pts
+Enunciado: A API foi chamada por um agente assinado como ClmDesk, não por navegador da estação de trabalho. Qual o User-Agent ClmDesk visto na API? Envie no formato CTF{User-Agent}. Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Host da API - 10 pts
+Enunciado: O Host dos pedidos autenticados confirma o vhost interno da API da CLM. Qual o Host HTTP de api.clm.local nos pedidos autenticados? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Banner API - 10 pts
+Enunciado: A resposta da API ainda assina ClmGateway no cabeçalho Server. Qual o cabeçalho Server HTTP ClmGateway? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

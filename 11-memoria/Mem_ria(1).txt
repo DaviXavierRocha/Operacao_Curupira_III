@@ -1,0 +1,207 @@
+=======================================
+ESPECIALIDADE: Memória
+=======================================
+
+### DESAFIO: RMEM TN - 10 pts
+Enunciado: Este tn-mem.bin é o snapshot RMEM do processo update.bin na TN-FIN-WS042 depois da ISO ICG-4200 na Campanha Relé, o dump de memória que o plantão tirou do dropper ainda residente. Qual o Computer no cabeçalho? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PID RWX TN - 10 pts
+Enunciado: O PID da linha Image=update.bin com Prot=RWX é o processo que o RMEM marca como região executável gravável. Qual o PID da linha Image=update.bin com Prot=RWX? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Off RWX TN - 10 pts
+Enunciado: O Off da região Prot=RWX do update.bin é onde este snapshot começa o blob gzip do dropper. Qual o Off da regiao Prot=RWX do update.bin? Padrão da resposta: valor direto. Exemplo: 512
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Len RWX TN - 10 pts
+Enunciado: O Len da região Prot=RWX do update.bin fecha o tamanho desse blob no RMEM da Transnorte. Qual o Len da regiao Prot=RWX do update.bin? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash RWX TN - 10 pts
+Enunciado: O SHA256 da região RWX depois de gzip -dc é o hash do PE descomprimido, não do blob cru. Qual o SHA256 da regiao RWX depois de gzip -dc? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Off MZ TN - 10 pts
+Enunciado: O offset do MZ dentro da região decodificada aponta onde o PE real começa depois do padding. Qual o offset do MZ dentro da regiao decodificada? Padrão da resposta: valor direto. Exemplo: 256
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 PE TN - 10 pts
+Enunciado: A URL C2 no PE a partir do MZ é o heartbeat verdadeiro, não o decoy que o dump também carrega. Qual a URL C2 no PE a partir do MZ (não o decoy)? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP socket TN - 10 pts
+Enunciado: O IPv4 do record binário cujo PID little-endian é d4120000 é o destino do socket deste update.bin. Qual o IPv4 do record binário cujo PID little-endian e d4120000? Padrão da resposta: valor direto. Exemplo: 1.2.3.4
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Porta socket TN - 10 pts
+Enunciado: A porta desse record de socket fecha o mesmo registro d4120000 na tabela de rede. Qual a porta desse record de socket? Padrão da resposta: valor direto. Exemplo: 443
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag RMEM TN - 10 pts
+Enunciado: A Flag no PE a partir do MZ é a marca deste snapshot, não o decoy. Qual a Flag no PE a partir do MZ (não o decoy)? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: RMEM LIT - 10 pts
+Enunciado: Este lit-mem.bin é o snapshot RMEM do curl.exe no LIT-NMS-02 depois do LNK DNS na Campanha Relé, o dump de memória do download que o atalho disparou no NMS. Qual o Computer no cabeçalho? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PID RWX LIT - 10 pts
+Enunciado: O PID da linha Image=curl.exe com Prot=RWX é o processo que o RMEM marca como região executável gravável. Qual o PID da linha Image=curl.exe com Prot=RWX? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Off RWX LIT - 10 pts
+Enunciado: O Off da região Prot=RWX do curl.exe é onde este snapshot começa o blob gzip do download. Qual o Off da regiao Prot=RWX do curl.exe? Padrão da resposta: valor direto. Exemplo: 512
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Len RWX LIT - 10 pts
+Enunciado: O Len da região Prot=RWX do curl.exe fecha o tamanho desse blob no RMEM da Litoral. Qual o Len da regiao Prot=RWX do curl.exe? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash RWX LIT - 10 pts
+Enunciado: O SHA256 da região RWX depois de gzip -dc é o hash do PE descomprimido neste dump do NMS. Qual o SHA256 da regiao RWX depois de gzip -dc? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Off MZ LIT - 10 pts
+Enunciado: O offset do MZ dentro da região decodificada aponta onde o PE real começa depois do padding. Qual o offset do MZ dentro da regiao decodificada? Padrão da resposta: valor direto. Exemplo: 256
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 PE LIT - 10 pts
+Enunciado: A URL C2 no PE a partir do MZ é o portal DNS verdadeiro, não o decoy deste dump. Qual a URL C2 no PE a partir do MZ (não o decoy)? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP socket LIT - 10 pts
+Enunciado: O IPv4 do record binário cujo PID little-endian é f4130000 é o destino do socket deste curl.exe. Qual o IPv4 do record binário cujo PID little-endian e f4130000? Padrão da resposta: valor direto. Exemplo: 1.2.3.4
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Porta socket LIT - 10 pts
+Enunciado: A porta desse record de socket fecha o mesmo registro f4130000 na tabela de rede. Qual a porta desse record de socket? Padrão da resposta: valor direto. Exemplo: 443
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag RMEM LIT - 10 pts
+Enunciado: A Flag no PE a partir do MZ é a marca deste snapshot da Litoral, não o decoy. Qual a Flag no PE a partir do MZ (não o decoy)? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: CLMD CLM - 10 pts
+Enunciado: Este clm-mem.bin é o dump CLMD da estação de trabalho CLM-MESA-014 depois do HTA da Campanha Relé. Não é o formato RMEM, e o plantão precisa do cabeçalho CLMD antes de tratar o SLOT AES. Qual o Station no cabeçalho? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User CLMD - 10 pts
+Enunciado: O User no cabeçalho CLMD aponta a conta da estação de trabalho em que o HTA rodou. Qual o User no cabeçalho? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: KeyHint AES - 10 pts
+Enunciado: O KeyHint é a senha que o openssl usa no SLOT Codec=aes deste dump. Qual o KeyHint usado como senha do AES-256-CBC do SLOT Codec=aes? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Salt CLMD - 10 pts
+Enunciado: O Salt hexadecimal do cabeçalho é o valor que entra no openssl -S deste CLMD. Qual o Salt hexadecimal do cabeçalho para o openssl -S? Padrão da resposta: valor direto. Exemplo: aabbccdd
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SockOff - 10 pts
+Enunciado: O SockOff da tabela de rede aponta onde este dump CLMD guarda os records de socket. Qual o SockOff da tabela de rede? Padrão da resposta: valor direto. Exemplo: 512
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SockStride - 10 pts
+Enunciado: O SockStride em bytes fecha o tamanho de cada record de socket nesta tabela. Qual o SockStride em bytes de cada record de socket? Padrão da resposta: valor direto. Exemplo: 16
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Off JSON AES - 10 pts
+Enunciado: O Off do SLOT Kind=json com Codec=aes é onde o JSON cifrado começa neste dump. Qual o Off do SLOT Kind=json com Codec=aes? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Len JSON AES - 10 pts
+Enunciado: O Len do SLOT Kind=json com Codec=aes fecha o tamanho desse JSON cifrado. Qual o Len do SLOT Kind=json com Codec=aes? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path HTA JSON - 10 pts
+Enunciado: O campo hta do JSON depois de openssl enc -d -aes-256-cbc -pbkdf2 -S é o path do HTA que a estação de trabalho abriu. Qual o campo hta do JSON depois de openssl enc -d -aes-256-cbc -pbkdf2 -S? Padrão da resposta: valor direto. Exemplo: C:\xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Pass JSON - 10 pts
+Enunciado: O campo pass do JSON decifrado é a senha que o kit colheu na estação de trabalho da Câmara. Qual o campo pass do JSON decifrado (senha colhida na estação de trabalho)? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 JSON - 10 pts
+Enunciado: O campo c2 do JSON decifrado é o portal verdadeiro, não o JSON Codec=plain. Qual o campo c2 do JSON decifrado (não o JSON Codec=plain)? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP socket CLM - 10 pts
+Enunciado: O IPv4 do record de 20 bytes cuja tag ASCII é CLMClient começa no byte 4 deste registro de socket. Qual o IPv4 do record de 20 bytes cuja tag ASCII e CLMClient? Os 4 bytes do IP comecam no byte 4. Padrão da resposta: valor direto. Exemplo: 1.2.3.4
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PID socket CLM - 10 pts
+Enunciado: O PID big-endian nos 4 primeiros bytes desse mesmo record é o processo do agente neste socket. Qual o PID big-endian nos 4 primeiros bytes desse mesmo record? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag CLMD - 10 pts
+Enunciado: O campo flag do JSON decifrado é a marca deste dump CLMD da Câmara. Qual o campo flag do JSON decifrado? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

@@ -1,0 +1,213 @@
+=======================================
+ESPECIALIDADE: Disco
+=======================================
+
+### DESAFIO: Disco TN - 10 pts
+Enunciado: Este tn-disk.img é o volume NTFS da estação TN-FIN-WS042 depois do dropper ICG-4200 na Campanha Relé, a imagem de disco em que o plantão ainda acha o update.bin, a lixeira e o ADS do relatório. Qual o Volume Name? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Perfil TN - 10 pts
+Enunciado: O diretório de perfil em /Users além de Public é a conta da estação de trabalho de finanças neste NTFS. Qual o diretório de perfil em /Users além de Public? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Startup TN - 10 pts
+Enunciado: O arquivo no Startup do ops.cardoso é o .cmd que o updater deixou para subir no logon. Qual o arquivo no Startup do ops.cardoso? Padrão da resposta: valor direto. Exemplo: xxxx.cmd
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Alvo Startup - 10 pts
+Enunciado: O path dentro do ObsidianUpdater.cmd aponta o update.bin que o Startup dispara. Qual o path dentro do ObsidianUpdater.cmd? Padrão da resposta: valor direto. Exemplo: C:\xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path dropper NTFS - 10 pts
+Enunciado: O path NTFS do update.bin no volume é onde o dropper ficou gravado neste disco da Transnorte. Qual o path NTFS do update.bin no volume? Padrão da resposta: valor direto. Exemplo: Users/xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash disco TN - 10 pts
+Enunciado: O SHA256 do update.bin no disco deve cruzar com o hash da ISO e do Sysmon. Qual o SHA256 do update.bin no disco? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Firmware icg.cfg - 10 pts
+Enunciado: O Firmware em ProgramData/IndusCom/icg.cfg é a versão que o vendor colou no config do ICG. Qual o Firmware em ProgramData/IndusCom/icg.cfg? Padrão da resposta: valor direto. Exemplo: 1.0.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Setpoint Desktop - 10 pts
+Enunciado: O Setpoint no occ-note.txt da Desktop é o valor da SE-03 que a estação de trabalho anotou em claro. Qual o Setpoint no occ-note.txt da Desktop? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: SID lixeira - 10 pts
+Enunciado: O SID sob $Recycle.Bin identifica a lixeira desta conta no NTFS da TN-FIN. Qual o SID sob $Recycle.Bin? Padrão da resposta: valor direto. Exemplo: S-1-5-21-1-2-3-1001
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path $I - 10 pts
+Enunciado: O path original UTF-16 no $I da lixeira, depois dos 28 bytes de cabeçalho, denuncia o arquivo que a estação de trabalho tentou apagar. Qual o path original UTF-16 no $I da lixeira (depois dos 28 bytes de cabeçalho)? Padrão da resposta: valor direto. Exemplo: C:\xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 $R - 10 pts
+Enunciado: A URL C2 no $R da lixeira é o heartbeat que restou no arquivo apagado. Qual a URL C2 no $R da lixeira (arquivo apagado)? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag ADS - 10 pts
+Enunciado: A Flag no ADS hidden de Q3-report.txt é a marca deste volume NTFS da Transnorte. Qual a Flag no ADS hidden de Q3-report.txt? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Disco LIT - 10 pts
+Enunciado: Este lit-disk.img é o volume ext4 do NMS Linux LIT-NMS-02 depois do pacote DNS da Campanha Relé, a imagem em que o RPM deixou cron, unit e um notes apagado. Qual o Volume Name? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hostname ext4 - 10 pts
+Enunciado: O hostname em etc/hostname confirma que este ext4 é o NMS da Litoral, não outra caixa. Qual o hostname em etc/hostname? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User UID 1000 - 10 pts
+Enunciado: O usuário de UID 1000 no passwd é a conta operacional deste NMS. Qual o usuário de UID 1000 no passwd? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cron IndusCom - 10 pts
+Enunciado: O comando no cron IndusCom, último campo da linha que não é comentário, é o binário que o pacote agendou. Qual o comando no cron IndusCom (último campo da linha que não é comentário)? Padrão da resposta: valor direto. Exemplo: /usr/xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Unit DNS - 10 pts
+Enunciado: O nome do unit systemd da IndusCom é o serviço que o RPM instalou neste NMS. Qual o nome do unit systemd da IndusCom? Padrão da resposta: valor direto. Exemplo: xxxx.service
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 dns.conf - 10 pts
+Enunciado: A URL C2 no dns.conf que restou do pacote RPM é o heartbeat ainda em etc. Qual a URL C2 no dns.conf que restou do pacote RPM? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash disco LIT - 10 pts
+Enunciado: O SHA256 do dns-update.bin no disco fecha o dropper que o RPM deixou em usr. Qual o SHA256 do dns-update.bin no disco? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hosts CDN - 10 pts
+Enunciado: O IPv4 de update.induscom-cdn.net no etc/hosts é o pin que o NMS usou para o canal. Qual o IPv4 de update.induscom-cdn.net no etc/hosts? Padrão da resposta: valor direto. Exemplo: 1.2.3.4
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Inode notes - 10 pts
+Enunciado: O inode do litoral-notes.txt apagado (fls -rd) aponta o arquivo que o NMS tentou sumir. Qual o inode do litoral-notes.txt apagado (fls -rd)? Padrão da resposta: valor direto. Exemplo: 12
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 apagado - 10 pts
+Enunciado: A URL C2 no arquivo apagado é o portal DNS, não o heartbeat do dns.conf. Qual a URL C2 no arquivo apagado (não o dns.conf)? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag apagado - 10 pts
+Enunciado: A Flag no arquivo apagado é a marca deste volume ext4 da Litoral. Qual a Flag no arquivo apagado? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Disco CLM - 10 pts
+Enunciado: Este clm-disk.dd é o disco MBR da estação de trabalho CLM-MESA-014 depois do HTA da Campanha Relé. O wiper ainda não rodou, e o plantão precisa do start da partição NTFS antes de listar o agente. Qual o Start em setores da partição NTFS? Padrão da resposta: valor direto. Exemplo: 63
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Tipo 0x07 - 10 pts
+Enunciado: O tipo da partição NTFS no mmls (hex) fecha a entrada MBR desta estação de trabalho da Câmara. Qual o tipo da partição NTFS no mmls (hex)? Padrão da resposta: valor direto. Exemplo: 0x00
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Volume NTFS - 10 pts
+Enunciado: O Volume Name do NTFS em offset 2048 identifica o volume depois de pular o MBR. Qual o Volume Name do NTFS em offset 2048? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Perfil CLM - 10 pts
+Enunciado: O perfil em Users além de Public é a conta da estação de trabalho em que o HTA caiu. Qual o perfil em Users além de Public? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: HTA Downloads - 10 pts
+Enunciado: O nome do HTA em Downloads é o arquivo que a estação de trabalho abriu depois da captura do kit. Qual o nome do HTA em Downloads? Padrão da resposta: valor direto. Exemplo: xxxx.hta
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path agente - 10 pts
+Enunciado: O path NTFS do clm-agent.bin é onde o HTA gravou o agente neste disco. Qual o path NTFS do clm-agent.bin? Padrão da resposta: valor direto. Exemplo: Users/xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash disco CLM - 10 pts
+Enunciado: O SHA256 do clm-agent.bin no disco fecha o agente que restou na estação de trabalho da CLM. Qual o SHA256 do clm-agent.bin no disco? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Pass desk.cred - 10 pts
+Enunciado: O Pass no desk.cred da estação de trabalho é a credencial que o kit colheu e deixou neste disco. Qual o Pass no desk.cred da estação de trabalho (credencial colhida)? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: State wiper - 10 pts
+Enunciado: O State do clm-wipe.bin, ainda não executado, diz em que estágio o wiper está neste dd. Qual o State do clm-wipe.bin (ainda não executado)? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Trigger wiper - 10 pts
+Enunciado: O Trigger do wiper é o gatilho que o binário espera antes de apagar o lote. Qual o Trigger do wiper? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Target wiper - 10 pts
+Enunciado: O Target do wiper é o lote de liquidação que o binário aponta. Qual o Target do wiper? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag wiper - 10 pts
+Enunciado: A Flag no clm-wipe.bin é a marca deste disco MBR da Câmara. Qual a Flag no clm-wipe.bin? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

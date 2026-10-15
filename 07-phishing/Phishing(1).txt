@@ -1,0 +1,159 @@
+=======================================
+ESPECIALIDADE: Phishing
+=======================================
+
+### DESAFIO: Boletim falso - 10 pts
+Enunciado: Este bulletin.eml é o boletim falso da IndusCom que chegou na caixa da estação de finanças da Transnorte na Campanha Relé, o recado que a estação de trabalho de ops.cardoso abriu como se fosse aviso oficial do vendor. Qual o endereço de e-mail do destinatário To? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: From boletim - 10 pts
+Enunciado: O From declarado neste bulletin tenta parecer suporte da IndusCom, não o domínio do canal que devolve a resposta. Qual o endereço de e-mail do From declarado? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Return-Path - 10 pts
+Enunciado: O Return-Path deste boletim, sem os sinais de agrupamento, denuncia o envelope real do envio. Qual o Return-Path (sem <> )? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Reply-To - 10 pts
+Enunciado: O Reply-To deste bulletin aponta para onde a estação de trabalho da Transnorte responderia se clicasse em responder. Qual o endereço de e-mail do Reply-To? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Assunto boletim - 10 pts
+Enunciado: O Subject deste boletim é o gancho que a IndusCom falsa usou na caixa da TN-FIN. Qual o Subject? Padrão da resposta: valor direto. Exemplo: xxxx yyyy
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Message-ID - 10 pts
+Enunciado: O Message-ID deste bulletin, sem os sinais de agrupamento, amarra a mensagem ao domínio do canal. Qual o Message-ID (sem <> )? Padrão da resposta: valor direto. Exemplo: id@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Portal boletim - 10 pts
+Enunciado: A URL do portal no corpo é o link que o boletim mandava a estação de trabalho da Transnorte abrir. Qual a URL do portal no corpo? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag boletim - 10 pts
+Enunciado: A Flag no corpo deste bulletin.eml é a marca do phish da Relé na caixa de finanças. Qual a Flag no corpo? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Helpdesk mbox - 10 pts
+Enunciado: Este helpdesk.mbox é o export da caixa helpdesk@litoral.telecom da Litoral Telecom na Campanha Relé, o volume em que um lure da IndusCom ficou misturado ao chamado real do helpdesk. Quantas mensagens há no mbox? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: From lure - 10 pts
+Enunciado: O From da mensagem da campanha neste mbox é o endereço que o lure usou para parecer suporte do vendor. Qual o endereço From da mensagem da campanha? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: To lure - 10 pts
+Enunciado: O To da mensagem da campanha aponta a caixa da Litoral que o lure escolheu neste mbox. Qual o endereço To da mensagem da campanha? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Return-Path lure - 10 pts
+Enunciado: O Return-Path da mensagem da campanha, sem os sinais de agrupamento, denuncia o envelope deste lure. Qual o Return-Path da mensagem da campanha (sem <> )? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Reply-To lure - 10 pts
+Enunciado: O Reply-To da mensagem da campanha é para onde a Litoral responderia se tratasse o lure como ticket. Qual o endereço Reply-To da mensagem da campanha? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Message-ID lure - 10 pts
+Enunciado: O Message-ID da mensagem da campanha, sem os sinais de agrupamento, identifica o lure no meio do helpdesk. Qual o Message-ID da mensagem da campanha (sem <> )? Padrão da resposta: valor direto. Exemplo: id@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP Received - 10 pts
+Enunciado: O IPv4 no Received da mensagem da campanha é o salto que entregou o lure na caixa da Litoral. Qual o IPv4 no Received da mensagem da campanha? Padrão da resposta: valor direto. Exemplo: 1.2.3.4
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Portal lure - 10 pts
+Enunciado: A URL do portal no corpo da mensagem da campanha é o link DNS falso que o lure mandava abrir. Qual a URL do portal no corpo da mensagem da campanha? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag lure - 10 pts
+Enunciado: A Flag no corpo da mensagem da campanha é a marca deste lure no mbox da Litoral. Qual a Flag no corpo da mensagem da campanha? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Harvest kit - 10 pts
+Enunciado: Este harvest.eml é o aviso do kit que chegou na caixa coletora do Obsidian depois do phish na Câmara de Liquidação Mercantil na Campanha Relé, o recado que confirma a captura da estação de trabalho da CLM. Qual o endereço To do coletor? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: From kit - 10 pts
+Enunciado: O From do kit neste harvest aponta o remetente que o Obsidian usou para avisar a caixa coletora. Qual o endereço From do kit? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Assunto harvest - 10 pts
+Enunciado: O Subject deste harvest.eml resume o recado da captura da CLM. Qual o Subject? Padrão da resposta: valor direto. Exemplo: xxxx yyyy
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Portal harvest - 10 pts
+Enunciado: A URL do portal no corpo é o login falso que o kit associou à captura da CLM. Qual a URL do portal no corpo? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: User form.dat - 10 pts
+Enunciado: O User no anexo form.dat é a conta que o kit colheu na estação de trabalho da Câmara. Qual o User no anexo form.dat? Padrão da resposta: valor direto. Exemplo: user@dominio
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Pass form.dat - 10 pts
+Enunciado: O Pass no anexo form.dat é a senha que o kit devolveu junto com a conta da CLM. Qual o Pass no anexo form.dat? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Host form.dat - 10 pts
+Enunciado: O Host no anexo form.dat nomeia a estação da Câmara de onde o kit saiu. Qual o Host no anexo form.dat? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: UA form.dat - 10 pts
+Enunciado: O UA no anexo form.dat é o agente que o kit registrou na captura. Qual o UA no anexo form.dat? Padrão da resposta: valor direto. Exemplo: xxxx/1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag harvest - 10 pts
+Enunciado: A Flag no anexo form.dat é a marca desta captura na caixa coletora. Qual a Flag no anexo form.dat? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

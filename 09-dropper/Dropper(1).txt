@@ -1,0 +1,159 @@
+=======================================
+ESPECIALIDADE: Dropper
+=======================================
+
+### DESAFIO: ISO ICG-4200 - 10 pts
+Enunciado: Este icg4200.iso é a mídia de update IndusCom montada na estação de finanças da Transnorte na Campanha Relé, o disco que a estação de trabalho tratou como firmware oficial do ICG-4200. Qual o Volume id? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: System id ISO - 10 pts
+Enunciado: O System id desta ISO amarra o volume à estação da Transnorte que montou a mídia. Qual o System id? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Publisher ISO - 10 pts
+Enunciado: O Publisher id desta ISO declara o vendor que assina o disco de update. Qual o Publisher id? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Preparer ISO - 10 pts
+Enunciado: O Data preparer id desta ISO aponta quem a mídia diz ter preparado o volume. Qual o Data preparer id? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Application ISO - 10 pts
+Enunciado: O Application id desta ISO é o agente que o disco declara, o mesmo do updater da Relé. Qual o Application id? Padrão da resposta: valor direto. Exemplo: xxxx/1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Autorun - 10 pts
+Enunciado: O open do autorun.inf é o binário que a ISO tentaria disparar ao montar. Qual o open do autorun.inf? Padrão da resposta: valor direto. Exemplo: xxxx.bin
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash ISO - 10 pts
+Enunciado: O SHA256 do update.bin fecha o dropper que a ISO carrega na raiz. Qual o SHA256 do update.bin? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 ISO - 10 pts
+Enunciado: A URL C2 no channel.txt desta ISO é o heartbeat que o disco deixa em claro. Qual a URL C2 no channel.txt? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag ISO - 10 pts
+Enunciado: A Flag no channel.txt é a marca desta mídia ICG-4200. Qual a Flag no channel.txt? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: LNK DNS - 10 pts
+Enunciado: Este dns.lnk é o atalho deixado no NMS da Litoral Telecom depois do pacote DNS da Campanha Relé, o LNK que o LIT-NMS-02 abriu como se fosse janela de manutenção. Qual o LocalBasePath? Padrão da resposta: valor direto. Exemplo: C:\xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: MachineID - 10 pts
+Enunciado: O MachineID deste LNK denuncia o host em que o atalho DNS foi criado. Qual o MachineID do LNK? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: WorkingDir - 10 pts
+Enunciado: O WorkingDirectory deste LNK é o diretório de trabalho que o atalho usa ao disparar. Qual o WorkingDirectory? Padrão da resposta: valor direto. Exemplo: C:\xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Description LNK - 10 pts
+Enunciado: A Description deste LNK é o texto que o atalho mostra como se fosse ferramenta DNS da IndusCom. Qual a Description? Padrão da resposta: valor direto. Exemplo: xxxx yyyy
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Serial LNK - 10 pts
+Enunciado: O DriveSerialNumber deste LNK é o serial do volume em que o atalho foi gravado. Qual o DriveSerialNumber? Padrão da resposta: valor direto. Exemplo: 0000-0000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Portal LNK - 10 pts
+Enunciado: A URL no CommandLineArguments é o portal DNS falso que o LNK baixa ao executar. Qual a URL no CommandLineArguments? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Saida LNK - 10 pts
+Enunciado: O nome do arquivo de saída no CommandLineArguments é o dropper que o LNK grava depois do download. Qual o nome do arquivo de saida no CommandLineArguments? Padrão da resposta: valor direto. Exemplo: xxxx.bin
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag LNK - 10 pts
+Enunciado: A Flag embutida neste LNK é a marca do atalho DNS da Litoral. Qual a Flag embutida no LNK? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: HTA CLM - 10 pts
+Enunciado: Este clm-login.hta é o dropper que rodou na estação de trabalho da Câmara de Liquidação Mercantil depois da captura do kit na Campanha Relé, o HTA que a CLM-MESA-014 abriu como login do vendor. Qual o host no JS? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: ID HTA - 10 pts
+Enunciado: O ID do HTA:APPLICATION é o identificador que o dropper declara na janela. Qual o ID do HTA:APPLICATION? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: AppName HTA - 10 pts
+Enunciado: O APPLICATIONNAME deste HTA é o nome de produto que a janela finge ser. Qual o APPLICATIONNAME? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Taskbar HTA - 10 pts
+Enunciado: O SHOWINTASKBAR deste HTA diz se a janela aparece na barra depois de abrir. Qual o SHOWINTASKBAR? Padrão da resposta: valor direto. Exemplo: yes
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: UA HTA - 10 pts
+Enunciado: O ua no JS é o agente que o HTA declara no script da estação de trabalho da CLM. Qual o ua no JS? Padrão da resposta: valor direto. Exemplo: xxxx/1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Portal HTA - 10 pts
+Enunciado: O url no JS é o portal de login falso que o HTA aponta. Qual o url no JS? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 HTA - 10 pts
+Enunciado: O c2 no JS é o heartbeat que o HTA chama depois do login falso. Qual o c2 no JS? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Drop HTA - 10 pts
+Enunciado: O Drop no payload base64 (var enc) é o binário que o HTA decodifica para cair na estação de trabalho. Qual o Drop no payload base64 (var enc)? Padrão da resposta: valor direto. Exemplo: xxxx.bin
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag HTA - 10 pts
+Enunciado: A Flag no payload base64 (var enc) é a marca deste HTA da Câmara. Qual a Flag no payload base64 (var enc)? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

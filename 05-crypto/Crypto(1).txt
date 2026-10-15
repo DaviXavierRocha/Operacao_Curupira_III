@@ -1,0 +1,285 @@
+=======================================
+ESPECIALIDADE: Crypto
+=======================================
+
+### DESAFIO: Nota hex - 10 pts
+Enunciado: Este arquivo é a nota cifrada da IndusCom recolhida na estação de finanças da Transnorte na Campanha Relé, o recado do vendor que só fecha depois de hex e Base64. Qual o Host no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador hex - 10 pts
+Enunciado: O Operator no cabeçalho em claro aponta quem o vendor associou a esta nota da estação de trabalho. Qual o Operator no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Canal hex - 10 pts
+Enunciado: O Channel no cabeçalho em claro nomeia o canal operacional desta nota da IndusCom. Qual o Channel no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Camadas hex - 10 pts
+Enunciado: O Encoding no cabeçalho diz como o plaintext foi empacotado antes da cifra. Qual o Encoding no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway hex - 10 pts
+Enunciado: Depois de hex e Base64, o plaintext ainda nomeia o gateway da SE-03. Qual o Gateway no plaintext depois de hex e base64? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Firmware hex - 10 pts
+Enunciado: O Firmware no plaintext decifrado é a versão que o recado do vendor citava para o ICG. Qual o Firmware no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Modelo hex - 10 pts
+Enunciado: O Model no plaintext fecha a família ICG citada nesta nota. Qual o Model no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 hex - 10 pts
+Enunciado: A URL C2 no plaintext é o canal que a nota mandava a estação de trabalho usar. Qual a URL C2 no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP C2 hex - 10 pts
+Enunciado: O C2_IP no plaintext fecha o IPv4 do canal citado nesta nota. Qual o C2_IP no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Setpoint hex - 10 pts
+Enunciado: O Setpoint no plaintext é o valor que o recado já antecipava para a SE-03. Qual o Setpoint no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Origem hex - 10 pts
+Enunciado: O Src no plaintext aponta o IP interno que o recado associava à escrita anômala. Qual o Src no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Build hex - 10 pts
+Enunciado: O Build no plaintext fecha a revisão do pacote citado nesta nota. Qual o Build no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: R1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Caso OCC hex - 10 pts
+Enunciado: O Case no plaintext é o código IR que o vendor ou o operador colou neste recado. Qual o Case no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: IR-1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag hex - 10 pts
+Enunciado: A Flag no plaintext decifrado é a marca do caso nesta nota da IndusCom. Qual a Flag no plaintext decifrado? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Beacon XOR - 10 pts
+Enunciado: Este arquivo é o blob XOR do heartbeat capturado na estação de finanças da Transnorte na Campanha Relé, o mesmo pulso periódico que o pcap já tinha mostrado sem decifrar. Qual a Key no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação XOR - 10 pts
+Enunciado: O Host no cabeçalho em claro identifica a estação de onde este heartbeat XOR saiu. Qual o Host no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador XOR - 10 pts
+Enunciado: O Operator no cabeçalho em claro aponta quem o vendor associou a este pulso. Qual o Operator no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cifra XOR - 10 pts
+Enunciado: O Cipher no cabeçalho diz qual cifra este blob de heartbeat declara usar. Qual o Cipher no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: UA XOR - 10 pts
+Enunciado: Depois do XOR, o UA no plaintext é o mesmo agente periódico visto no pcap da Transnorte. Qual o UA no plaintext depois do XOR? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 XOR - 10 pts
+Enunciado: A URL C2 no plaintext é o canal que este heartbeat descreve. Qual a URL C2 no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Path XOR - 10 pts
+Enunciado: O Path no plaintext é o URI do heartbeat que o blob descreve. Qual o Path no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: /x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Intervalo XOR - 10 pts
+Enunciado: O Interval no plaintext é o período do pulso do implante. Qual o Interval no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: 60
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Dominio XOR - 10 pts
+Enunciado: O Beacon no plaintext nomeia o tipo ou o canal deste pulso. Qual o Beacon no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Origem XOR - 10 pts
+Enunciado: O Src no plaintext é o IPv4 de origem do heartbeat na estação de trabalho de finanças. Qual o Src no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Destino XOR - 10 pts
+Enunciado: O Dst no plaintext é o IPv4 de destino deste heartbeat. Qual o Dst no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag XOR - 10 pts
+Enunciado: A Flag no plaintext decifrado é a marca deste blob XOR do heartbeat. Qual a Flag no plaintext decifrado? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Pacote AES - 10 pts
+Enunciado: Este arquivo é o pacote AES do updater da IndusCom recolhido na estação de finanças da Transnorte na Campanha Relé, a receita do drop que o Defender classificou como ObsidianUpdater. Qual o Pass no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação AES - 10 pts
+Enunciado: O Host no cabeçalho em claro identifica a estação de onde este pacote AES do updater saiu. Qual o Host no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador AES - 10 pts
+Enunciado: O Operator no cabeçalho em claro aponta quem o vendor associou a este updater. Qual o Operator no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Cifra AES - 10 pts
+Enunciado: O Cipher no cabeçalho diz qual cifra este pacote do updater declara usar. Qual o Cipher no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: KDF AES - 10 pts
+Enunciado: O KDF no cabeçalho diz como a senha vira chave neste pacote AES. Qual o KDF no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: URL updater AES - 10 pts
+Enunciado: Depois do AES, a URL no plaintext é de onde o updater deveria se puxar. Qual a URL no plaintext depois do AES? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Drop AES - 10 pts
+Enunciado: O Drop no plaintext é o path em que o updater deveria cair no disco da estação de trabalho. Qual o Drop no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: C:/x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hash AES - 10 pts
+Enunciado: O Hash no plaintext fecha o binário que este pacote AES descreve. Qual o Hash no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: aabb
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: UA AES - 10 pts
+Enunciado: O UA no plaintext é o agente que o updater usaria na saída. Qual o UA no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 AES - 10 pts
+Enunciado: A URL C2 no plaintext é o canal que o updater da IndusCom deveria usar. Qual a URL C2 no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag AES - 10 pts
+Enunciado: A Flag no plaintext decifrado é a marca deste pacote AES do updater. Qual a Flag no plaintext decifrado? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Kit RSA - 10 pts
+Enunciado: Este PEM é o kit RSA de recuperação da IndusCom recolhido com o sync do vendor na Campanha Relé, a chave que o operador do Obsidian deixou junto do canal de sync. Qual o Host no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador RSA - 10 pts
+Enunciado: O Operator no cabeçalho em claro aponta quem o vendor associou a este kit RSA. Qual o Operator no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Tipo chave - 10 pts
+Enunciado: O KeyType no cabeçalho declara o tamanho e o tipo da chave RSA deste kit. Qual o KeyType no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: RSA-1024
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Padding RSA - 10 pts
+Enunciado: O Padding no cabeçalho diz como o RSA deste kit foi aplicado. Qual o Padding no cabeçalho em claro? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway RSA - 10 pts
+Enunciado: Depois do RSA, o plaintext ainda nomeia o gateway da SE-03. Qual o Gateway no plaintext depois do RSA? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Firmware RSA - 10 pts
+Enunciado: O Firmware no plaintext decifrado é a versão do ICG citada neste kit de recuperação. Qual o Firmware no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 RSA - 10 pts
+Enunciado: A URL C2 no plaintext é o canal que este kit RSA descreve. Qual a URL C2 no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Origem RSA - 10 pts
+Enunciado: O Src no plaintext aponta o IP interno que o kit associava à escrita na SE-03. Qual o Src no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação RSA - 10 pts
+Enunciado: A Station no plaintext amarra o kit RSA à estação ou subestação do caso. Qual o Station no plaintext decifrado? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag RSA - 10 pts
+Enunciado: A Flag no plaintext decifrado é a marca deste kit RSA da IndusCom. Qual a Flag no plaintext decifrado? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------

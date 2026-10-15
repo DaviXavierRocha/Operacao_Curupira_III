@@ -1,0 +1,435 @@
+=======================================
+ESPECIALIDADE: Stego
+=======================================
+
+### DESAFIO: Boletim PDF - 10 pts
+Enunciado: Este PDF é o boletim de release da IndusCom baixado na estação de finanças da Transnorte na Campanha Relé, o documento que a estação de trabalho abriu como update legítimo do ICG-4200. Qual o Title do documento? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Autor PDF - 10 pts
+Enunciado: O Author deste PDF ainda assina quem a IndusCom colocou no metadado do boletim. Qual o Author do PDF? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador PDF - 10 pts
+Enunciado: O Manager no metadado aponta o responsável interno que o vendor gravou neste boletim. Qual o Manager do PDF? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação PDF - 10 pts
+Enunciado: O Station no metadado amarra o boletim à estação ou subestação citada no caso Relé. Qual o Station do PDF? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway PDF - 10 pts
+Enunciado: O Gateway no metadado nomeia o ICG que este boletim dizia atualizar. Qual o Gateway do PDF? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Firmware PDF - 10 pts
+Enunciado: A versão de firmware no metadado é a que o boletim vendia como update da SE-03. Qual o Firmware no metadado do PDF? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Build PDF - 10 pts
+Enunciado: O Build no metadado fecha a revisão do pacote que a estação de trabalho de finanças baixou. Qual o Build no metadado do PDF? Padrão da resposta: valor direto. Exemplo: R1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Páginas PDF - 10 pts
+Enunciado: O PageCount confirma quantas páginas este boletim da IndusCom realmente tem. Qual o PageCount do PDF? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Versão PDF - 10 pts
+Enunciado: A versão reportada pelo pdfinfo é a do container PDF, não a do firmware do ICG. Qual a versão PDF reportada pelo pdfinfo? Padrão da resposta: valor direto. Exemplo: 1.4
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: PDF cifrado - 10 pts
+Enunciado: O campo Encrypted do pdfinfo diz se o boletim vinha travado ou aberto para a estação de trabalho. Qual o valor Encrypted do pdfinfo? Padrão da resposta: valor direto. Exemplo: no
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Largura página - 10 pts
+Enunciado: A largura em pts na linha Page size fecha o formato da página deste boletim. Qual a largura em pts na linha Page size do pdfinfo? Padrão da resposta: valor direto. Exemplo: 595
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Modelo no PDF - 10 pts
+Enunciado: O texto extraído ainda traz a linha Model: do ICG citado no boletim. Qual o modelo na linha Model: do texto extraido? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Site no PDF - 10 pts
+Enunciado: A linha Site: no texto aponta a subestação que o boletim mencionava. Qual o site na linha Site: do texto extraido? Padrão da resposta: valor direto. Exemplo: SE-00
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 no PDF - 10 pts
+Enunciado: O texto do boletim ainda carrega uma linha C2: com a URL do canal. Qual a URL na linha C2: do texto extraido? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: IP C2 PDF - 10 pts
+Enunciado: A linha C2_IP: no texto fecha o IPv4 que o boletim associava ao canal. Qual o IP na linha C2_IP: do texto extraido? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Setpoint PDF - 10 pts
+Enunciado: A linha Setpoint: no texto é o valor que o boletim já antecipava para a SE-03. Qual o valor na linha Setpoint: do texto extraido? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Anexo PDF - 10 pts
+Enunciado: Há um arquivo embutido neste PDF, listado pelo pdfdetach, fora das páginas visíveis. Qual o nome do arquivo embutido listado pelo pdfdetach? Padrão da resposta: valor direto. Exemplo: x.txt
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Conteúdo anexo - 10 pts
+Enunciado: O embutido não é só nome: por dentro ainda tem a URL do canal da IndusCom. Qual a URL gravada no arquivo embutido? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Zip pos-EOF PDF - 10 pts
+Enunciado: Além do embutido, há um ZIP colado neste PDF com um arquivo relay. Qual o nome do arquivo relay dentro do zip colado no PDF? Padrão da resposta: valor direto. Exemplo: x.txt
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag zip PDF - 10 pts
+Enunciado: O relay.txt nesse ZIP colado carrega a marca do caso do boletim. Qual a flag dentro de relay.txt no zip colado no PDF? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Foto de campo - 10 pts
+Enunciado: Esta JPEG é a foto de campo da subestação SE-03 da Transnorte, o primeiro registro visual da Campanha Relé, tirada no horário em que o setpoint já não era o do OCC. Qual o ImageDescription? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Fabricante EXIF - 10 pts
+Enunciado: O Make da câmera no EXIF identifica o fabricante usado neste registro visual da SE-03. Qual o Make da camera? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Modelo EXIF - 10 pts
+Enunciado: O Model da câmera fecha o equipamento que tirou a foto de campo da SE-03. Qual o Model da camera? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Software EXIF - 10 pts
+Enunciado: O Software no EXIF denuncia o programa que gravou esta foto de campo. Qual o Software da captura? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Hora da foto - 10 pts
+Enunciado: O DateTimeOriginal marca o horário de campo em que a foto da SE-03 foi tirada. Qual o DateTimeOriginal? Padrão da resposta: valor direto. Exemplo: 2026:01:01 00:00:00
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador EXIF - 10 pts
+Enunciado: O Artist no EXIF aponta quem a câmera registrou como autor desta foto. Qual o Artist? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação EXIF - 10 pts
+Enunciado: O HostComputer no EXIF amarra a foto à estação que importou o arquivo. Qual o HostComputer? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Serial EXIF - 10 pts
+Enunciado: O SerialNumber fecha a câmera física usada no registro visual da SE-03. Qual o SerialNumber da camera? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Copyright EXIF - 10 pts
+Enunciado: O Copyright no EXIF ainda assina a operação ou a empresa neste arquivo da foto. Qual o Copyright? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Comentário EXIF - 10 pts
+Enunciado: O Comment da JPEG é o texto livre que viajou com a foto de campo da SE-03. Qual o Comment da JPEG? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: UserComment - 10 pts
+Enunciado: O UserComment no EXIF carrega a URL ou o texto que não aparece na imagem. Qual o UserComment? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Latitude - 10 pts
+Enunciado: A latitude numérica (exiftool -n) posiciona a foto na SE-03, não num decoy. Qual a GPSLatitude numerica (exiftool -n)? Padrão da resposta: valor direto. Exemplo: -1.2
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Longitude - 10 pts
+Enunciado: A longitude numérica (exiftool -n) fecha o ponto da subestação no mapa. Qual a GPSLongitude numerica (exiftool -n)? Padrão da resposta: valor direto. Exemplo: -1.2
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Altitude - 10 pts
+Enunciado: A altitude numérica (exiftool -n) é o terceiro eixo do ponto de campo da SE-03. Qual a GPSAltitude numerica (exiftool -n)? Padrão da resposta: valor direto. Exemplo: 10
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Largura foto - 10 pts
+Enunciado: A ImageWidth confirma a resolução da foto usada como evidência visual. Qual o ImageWidth? Padrão da resposta: valor direto. Exemplo: 800
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Zip pos-EOF JPG - 10 pts
+Enunciado: Há um ZIP colado nesta JPEG com um txt de campo. Qual o nome do txt dentro do zip colado na JPEG? Padrão da resposta: valor direto. Exemplo: x.txt
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag zip JPG - 10 pts
+Enunciado: O field.txt nesse ZIP da foto carrega a marca do caso da SE-03. Qual a flag dentro de field.txt no zip colado na JPEG? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Relatório DOCX - 10 pts
+Enunciado: Este DOCX é o relatório de incidente do OCC da Transnorte sobre a subestação SE-03 na Campanha Relé, redigido quando o despacho ainda classificava a escrita anômala como falha de campo. Qual o dc:title em docProps/core.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Autor DOCX - 10 pts
+Enunciado: O dc:creator em core.xml aponta quem o OCC registrou como autor deste relatório. Qual o dc:creator em core.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Assunto DOCX - 10 pts
+Enunciado: O dc:subject em core.xml classifica o assunto do incidente da SE-03. Qual o dc:subject em core.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Keywords DOCX - 10 pts
+Enunciado: As keywords em core.xml são as tags que o OCC colou neste relatório. Qual o cp:keywords em core.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Identificador - 10 pts
+Enunciado: O dc:identifier em core.xml é o código IR do caso neste DOCX. Qual o dc:identifier em core.xml? Padrão da resposta: valor direto. Exemplo: IR-1
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Categoria DOCX - 10 pts
+Enunciado: A category em core.xml é o enquadramento que o OCC deu ao incidente da SE-03. Qual o cp:category em core.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Criação DOCX - 10 pts
+Enunciado: O dcterms:created em 2026 marca quando este relatório de incidente foi gerado. Qual o timestamp 2026 do dcterms:created? Padrão da resposta: valor direto. Exemplo: 2026-01-01T00:00:00Z
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Empresa DOCX - 10 pts
+Enunciado: A Company em docProps/app.xml assina a empresa dona deste documento do OCC. Qual o Company em docProps/app.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: App DOCX - 10 pts
+Enunciado: A Application em app.xml denuncia o programa que gerou este DOCX. Qual o Application em app.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Setpoint DOCX - 10 pts
+Enunciado: O corpo do relatório ainda cita o Setpoint: anômalo da SE-03 no document.xml. Qual o valor na linha Setpoint: do document.xml? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gateway DOCX - 10 pts
+Enunciado: A linha Gateway: no corpo nomeia o ICG que o OCC associou ao incidente. Qual o hostname na linha Gateway: do document.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Origem cmd DOCX - 10 pts
+Enunciado: A linha Src: no corpo aponta o IP que o OCC registrou como origem da escrita. Qual o IP na linha Src: do document.xml? Padrão da resposta: valor direto. Exemplo: x.x.x.x
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: C2 DOCX - 10 pts
+Enunciado: A linha C2: no relatório leva a URL do canal que o OCC já tinha visto. Qual a URL na linha C2: do document.xml? Padrão da resposta: valor direto. Exemplo: http://xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Firmware DOCX - 10 pts
+Enunciado: A linha Firmware: no corpo fecha a versão do gateway no relato do OCC. Qual o valor na linha Firmware: do document.xml? Padrão da resposta: valor direto. Exemplo: 1.0
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: estação DOCX - 10 pts
+Enunciado: A linha Station: nomeia a estação ou subestação neste relato do OCC. Qual o hostname na linha Station: do document.xml? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Comentário zip - 10 pts
+Enunciado: O comentário do ZIP deste DOCX (unzip -z) ainda assina o pacote da IndusCom. Qual o comentário do zip do DOCX (unzip -z)? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Arquivo oculto - 10 pts
+Enunciado: Há um hint escondido em word/media, fora do texto visível do relatório. Qual o nome base do hint escondido em word/media? Padrão da resposta: valor direto. Exemplo: x.hint
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag hint DOCX - 10 pts
+Enunciado: O vendor.hint em word/media carrega a marca do caso deste DOCX. Qual a flag em word/media/vendor.hint? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Radio OCC - 10 pts
+Enunciado: Este WAV é a gravação do canal de voz do OCC da Transnorte na subestação SE-03, no horário do setpoint anômalo da Campanha Relé, quando o rádio ainda pedia confirmação de um valor que o historian já tinha. Qual o Title? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Operador WAV - 10 pts
+Enunciado: O Artist desta gravação identifica quem o canal de voz registrou como autor ou operador. Qual o Artist? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Comentário WAV - 10 pts
+Enunciado: O Comment desta mídia é o texto livre que viajou com a gravação do OCC. Qual o Comment? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Copyright WAV - 10 pts
+Enunciado: O Copyright ainda assina a operação ou a empresa nesta peça de áudio. Qual o Copyright? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Software WAV - 10 pts
+Enunciado: O Software identifica o programa que gerou ou capturou este canal de voz. Qual o Software? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Engenheiro WAV - 10 pts
+Enunciado: O Engineer no metadado aponta o técnico associado a esta gravação da SE-03. Qual o Engineer? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Gênero WAV - 10 pts
+Enunciado: O Genre no metadado é a classificação que esta captura de rádio recebeu. Qual o Genre? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Produto WAV - 10 pts
+Enunciado: O Product no metadado nomeia o sistema ou produto ligado a esta gravação. Qual o Product? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Técnico WAV - 10 pts
+Enunciado: O Technician identifica o operador de rádio ou de campo nesta peça. Qual o Technician? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Assunto WAV - 10 pts
+Enunciado: O Subject no metadado resume o assunto da gravação do OCC na SE-03. Qual o Subject? Padrão da resposta: valor direto. Exemplo: xxxx
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Data WAV - 10 pts
+Enunciado: O DateCreated marca o dia da gravação no canal de voz da SE-03. Qual o DateCreated? Padrão da resposta: valor direto. Exemplo: 2026:01:01
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Sample rate - 10 pts
+Enunciado: A sample rate fecha o formato da gravação de voz do OCC. Qual o sample rate em Hz? Padrão da resposta: valor direto. Exemplo: 8000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Canais WAV - 10 pts
+Enunciado: A contagem de canais diz se o rádio foi gravado em mono ou estéreo. Quantos canais tem o WAV? Padrão da resposta: valor direto. Exemplo: 2
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Bits WAV - 10 pts
+Enunciado: A profundidade em bits é a resolução PCM desta gravação. Qual a profundidade em bits? Padrão da resposta: valor direto. Exemplo: 16
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Amostras WAV - 10 pts
+Enunciado: A contagem de samples fecha a duração útil do canal de voz no horário do setpoint. Quantas samples existem na gravação? Padrão da resposta: valor direto. Exemplo: 1000
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Zip pos-EOF WAV - 10 pts
+Enunciado: Há um ZIP colado neste WAV com um txt do canal de rádio. Qual o nome do txt dentro do zip colado no WAV? Padrão da resposta: valor direto. Exemplo: x.txt
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
+
+### DESAFIO: Flag zip WAV - 10 pts
+Enunciado: O radio.txt nesse ZIP da gravação carrega a marca do caso no horário do setpoint anômalo. Qual a flag dentro de radio.txt no zip colado no WAV? Padrão da resposta: CTF{...}. Exemplo: CTF{xxxx}
+Link do Alvo: Nenhum link de alvo encontrado nesta questão
+
+---------------------------------------
