@@ -120,7 +120,7 @@
     *http.user_agent != "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"*
   Com isso filtrará somente as operações que *NÃO* foram feitas com os User-Agents de navegadores convencionais, sobrando somente um *GET v1/heartbeat HTTP/1.1* em que o User-Agent se trata do: ObsidianUpdater/2.1
 
-  ![Evidência 11](caminho/para/imagem.png)
+  ![Evidência 11](./anexos/evidencias/Flag_6.png)
 - **Resposta:** CTF{ObsidianUpdater/2.1}
 
 ---
@@ -128,36 +128,49 @@
 ### 12. CDN falsa - 10 pts
 - **Enunciado:** O pulso periódico desse agente ainda denuncia o vhost da CDN no cabeçalho Host. Qual o Host HTTP usado por esse beacon?
 - **Análise / Resolução:**
-  
-  ![Evidência 12](caminho/para/imagem.png)
-- **Resposta:** 
+
+  Com o mesmo filtro da flag anterior[http.user_agent != "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"] e, inclusive com na mesma evidencia anterior, teremos um *Host: update.induscom-cdn.net* um pouco abaixo do *User-Agent*
+
+  ![Evidência 12](./anexos/evidencias/Flag_6.png)
+- **Resposta:** update.induscom-cdn.net
 
 ---
 
 ### 13. Heartbeat HTTP - 10 pts
-- **Enunciado:** URI/Parâmetros do heartbeat HTTP periódico.[cite: 5]
+- **Enunciado:** O caminho pedido nesse GET periódico é o heartbeat do canal, não uma página do portal OCC. Qual o URI requisitado no beacon?
 - **Análise / Resolução:**
-  
-  ![Evidência 13](caminho/para/imagem.png)
-- **Resposta:** 
+  Ainda na evidencia da *Flag 11. Atualizador Fantasma* teremos como especificar mais os metodos onde se vê o tipo de método(GET), a URI de Request (/v1/heartbeat) e a versão do request (HTTP/1.1), nesse caso a resposta pedida é: /v1/heartbeat. Mesmo se tratando da mesma evidencia, o print será diferente para melhor compreenção
+
+  ![Evidência 13](./anexos/evidencias/Flag_7.png)
+- **Resposta:** /v1/heartbeat
 
 ---
 
 ### 14. Notes HTTP - 10 pts
-- **Enunciado:** No mesmo pcap a estação de trabalho baixou as release notes da IndusCom e o corpo desse objeto ainda carrega a marca do caso. Qual a flag no corpo das release notes da IndusCom?[cite: 5, 14]
+- **Enunciado:** No mesmo pcap a estação de trabalho baixou as release notes da IndusCom e o corpo desse objeto ainda carrega a marca do caso. Qual a flag no corpo das release notes da IndusCom?
 - **Análise / Resolução:**
-  
-  ![Evidência 14](caminho/para/imagem.png)
-- **Resposta (Flag):** `CTF{...}`
+
+  Nesta situação fiz de duas formas. A primeira seria por aplicar os filtros por método http:
+    *http.request.method == "GET"*
+  como pode-se notar na evidencia, o arquivo .txt dos Releases Notes da IndusCom é um dos primeiros na lista então, ao localizá-lo, retiro o filtro, pois não há flag aqui ainda, a unica coisa dita aqui foi "quero esse arquivo /vendor/IndusCom_ReleaseNotes.txt" e não vejo nenhum indicio da flag nesse pacote, ou seja, a flag está na resposta a esse pacote e, no caso se perceber ele é bem maior que os outros pacotes ao verificá-lo achará a flag na *ETag: CTF{relays_are_not_updates}*.
+
+  Nota : Para a segunda forma, seria a forma que procurei no dia do CTF em questão, simplifiquei bastante, com o filtro *http* aplicado, pesquisei nas expressões regulares *.txt* pois eu havia deduzido que podia ser um txt mas, não cheguei a uma conclusão satisfatória ao verificar o pacote e não havia percebido que no pacote posterior estava a flag pois estava distraido com o */vendor/IndusCom_ReleaseNotes.txt* então concluí que por se tratar de um arquivo de texto dentro de um pacote, ele poderia ter um tamanho maior que o convencional, dessa forma, organizei o filtro do protocolo *http* por tamanho. O primeiro de cara era o maior e já tinha a flag e verifiquei o *Content-Type: text/plain; charset=utf-8* e a *Request URI: /vendor/IndusCom_ReleaseNotes.txt* que me indicava que era a flag procurada.
+
+  ![Evidência 14](./anexos/evidencias/Flag_8.png)
+- **Resposta (Flag):** `CTF{relays_are_not_updates}`
 
 ---
 
 ### 15. Inverno na intranet - 10 pts
 - **Enunciado:** Houve um POST em claro para o login do OCC e o campo de senha estava no corpo desse pedido. Qual a senha enviada no POST de /api/auth/login?[cite: 5, 14]
 - **Análise / Resolução:**
+
+  Nesse caso filtro por método HTTP POST com o filtro a seguir:
+    *http.request.method == "POST"*
+  Sendo assim há somente uma requisição POST e verificando essa requisição nota-se que é repassado de forma aberta itens de formulario onde o username repassado é *ops.cardoso* e password, que é a nossa flag é *WinterGrid#19*.
   
-  ![Evidência 15](caminho/para/imagem.png)
-- **Resposta:** 
+  ![Evidência 15](./anexos/evidencias/Flag_9.png)
+- **Resposta:** WinterGrid#19
 
 ---
 
