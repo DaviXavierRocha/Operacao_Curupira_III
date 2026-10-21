@@ -6,13 +6,13 @@ Repositório dedicado à documentação técnica, análise forense e resolução
 
 ## 📊 Progresso Geral
 
-**Status Geral:** `0 / 487 Desafios Concluídos (0%)`
+**Status Geral:** `15 / 487 Desafios Concluídos (3%)`
 
-`[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%`
+`[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3%`
 
 | Categoria | Concluídos | Total | Status | Arquivos / Write-ups |
 | :--- | :---: | :---: | :---: | :--- |
-| **01. PCAP** | 0 | 78 | ⚪ Não iniciado | [captura](01-pcap/captura-pcap.md) • [captura2](01-pcap/captura2-pcap.md) • [captura3](01-pcap/captura3-pcap.md) |
+| **01. PCAP** | 15 | 78 | 🟡 Em Andamento | [captura](01-pcap/captura-pcap.md) • [captura2](01-pcap/captura2-pcap.md) • [captura3](01-pcap/captura3-pcap.md) |
 | **02. LOG** | 0 | 104 | ⚪ Não iniciado | [syslog](02-log/syslog-log.md) • [access](02-log/access-log.md) • [defender](02-log/defender-log.md) • [modbus](02-log/modbus-log.md) |
 | **03. SQLite** | 0 | 78 | ⚪ Não iniciado | [history](03-sqlite/history-db.md) • [historian](03-sqlite/historian-db.md) • [vpn](03-sqlite/vpn-db.md) |
 | **04. Stego** | 0 | 72 | ⚪ Não iniciado | [pdf](04-stego/induscom-releasenotes-pdf.md) • [jpg](04-stego/se03-jpg.md) • [docx](04-stego/report-docx.md) • [wav](04-stego/se03-radio-wav.md) |
