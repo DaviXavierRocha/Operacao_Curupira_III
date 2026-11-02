@@ -162,7 +162,7 @@
 ---
 
 ### 15. Inverno na intranet - 10 pts
-- **Enunciado:** Houve um POST em claro para o login do OCC e o campo de senha estava no corpo desse pedido. Qual a senha enviada no POST de /api/auth/login?[cite: 5, 14]
+- **Enunciado:** Houve um POST em claro para o login do OCC e o campo de senha estava no corpo desse pedido. Qual a senha enviada no POST de /api/auth/login.
 - **Análise / Resolução:**
 
   Nesse caso filtro por método HTTP POST com o filtro a seguir:
@@ -175,47 +175,60 @@
 ---
 
 ### 16. TXT backbone - 10 pts
-- **Enunciado:** Fora da zona interna, uma resposta TXT de status.litoral-dns.net aparece neste pcap com conteúdo que não é diagnóstico de rede. Qual o conteúdo TXT de status.litoral-dns.net?[cite: 5, 14]
+- **Enunciado:** Fora da zona interna, uma resposta TXT de status.litoral-dns.net aparece neste pcap com conteúdo que não é diagnóstico de rede. Qual o conteúdo TXT de status.litoral-dns.net?
 - **Análise / Resolução:**
-  
-  ![Evidência 16](caminho/para/imagem.png)
-- **Resposta (Flag):** `CTF{...}`
+
+  Nesse caso filtro por DNS e pesquiso nas expressões regulares *status.litoral-dns.net* ou *TXT*, teremos 2 pacotes, um de "solicitação" e outro de "resposta" constata-se que é o que está sendo enviado ao IP da maquina comprometida, ao abrir as respostas vemos o formato(TXT), tamanho do TXT e o proprio TXT(CTF{backbone_hold_ok})
+
+  ![Evidência 16](./anexos/evidencias/Flag_10.png)
+- **Resposta (Flag):** `CTF{backbone_hold_ok}`
 
 ---
 
 ### 17. Sync vendor - 10 pts
-- **Enunciado:** Qual FQDN cdn-sync foi resolvido neste pcap?[cite: 5]
+- **Enunciado:** A estação também resolveu um nome cdn-sync da IndusCom no mesmo momento do beacon. Qual FQDN cdn-sync foi resolvido neste pcap?
 - **Análise / Resolução:**
+
+  Filtrado por DNS procuro FQDN(Fully Qualified Domain Name) Nome de Dominio Completamente Qualificado trata-se do endereço DNS completo da maquina que seria *status.litoral-dns.net*
   
-  ![Evidência 17](caminho/para/imagem.png)
-- **Resposta:** 
+  ![Evidência 17](./anexos/evidencias/Flag_11.png)
+- **Resposta:** status.litoral-dns.net
 
 ---
 
 ### 18. IP do sync - 10 pts
-- **Enunciado:** Qual IPv4 foi retornado para cdn-sync.induscom-support.net?[cite: 5]
+- **Enunciado:** A resposta desse nome de suporte aponta o IPv4 usado no sync do vendor. Qual IPv4 foi retornado para cdn-sync.induscom-support.net?
 - **Análise / Resolução:**
+
+  Para essa flag podemos usar o filtro do nome da Query já estava somente "dns" no filtro então mudei o filtro para dns.qry.name(seria o filtro de querry por nome) e pesquiso o "*cdn-sync.induscom-support.net*" verifico que ele responde o IP nos pacotes de resposta: 198.51.100.88 no endereço de resposta.
   
-  ![Evidência 18](caminho/para/imagem.png)
-- **Resposta:** 
+  ![Evidência 18](./anexos/evidencias/Flag_12.png)
+- **Resposta:** 198.51.100.88
 
 ---
 
 ### 19. DNS falastrão - 10 pts
-- **Enunciado:** Registro de consulta anômala no DNS.[cite: 5]
+- **Enunciado:** Há ainda uma query DNS cujo primeiro rótulo não é hostname: é Base64 e começa com Q1RG, a assinatura de CTF{.} Decodifique esse rótulo.
 - **Análise / Resolução:**
   
-  ![Evidência 19](caminho/para/imagem.png)
-- **Resposta:** 
+  Nesta flag uso o mesmo filtro da flag passada (filtrar por nome da Querry), mas o enunciado não me especifica um nome completo, ele me dá só parte dele então, no filtro, em vez de "==" utilizo "contains" e o começo do hostname "Q1RG" então temos dois pacotes (um de solicitação e outro de resposta) com a query name do dns: *Q1RGe2Ruc19zaWRlY2hhbm5lbF9va30=.sync.induscom-support.net* (Evidecia 19.1). Mas isso não é o bastante, esse rotulo inicial está em Base64, preciso descodificá-lo para que eu possa ler a informação em claro. Para isso procuro um site que faça essa decodificação e, com isso, tem-se a resposta(Evidecia 19.2).
+
+  ![Evidência 19.1](./anexos/evidencias/Flag_13.png)
+
+  ![Evidência 19.2](./anexos/evidencias/Flag_14.png)
+
+- **Resposta:** `CTF{dns_sidechannel_ok}`
 
 ---
 
 ### 20. SNI TLS TN - 10 pts
-- **Enunciado:** Nome TLS/SNI usado no Client Hello da TN-FIN.[cite: 5]
+- **Enunciado:** O Client Hello para 198.51.100.91 ainda denuncia o nome TLS que o implante queria alcançar. Qual o SNI TLS usado nas conexões para 198.51.100.91?
 - **Análise / Resolução:**
   
-  ![Evidência 20](caminho/para/imagem.png)
-- **Resposta:** 
+  No enunciado sobre o TLS então já ajusto o filtro para o protocolo TLS, mas isso não é o bastante, então filtro para o tipo especifico de handshake que no caso seria o *Client Hello* sendo assim *tls.handshake.type == "Client Hello"*(protocolo.handshake.tipo de handshake) mas só isso não é o bastante, o pcap tem inumeros pacotes com esse handshake. Para resolver isso, adicionamos uma outra filtragem, pois ele tem que ser um handshake *Client Hello* para o Ip 198.51.100.91, dessa forma colocamos o operador logico e/and representado por *&&* e adicionamos o endereço ip de destino com o filtro *ip.dst_host == "198.51.100.91"* restará um pacote, nele eu procuro: "Server Name Indication" expando e procuro a opção Server Name e nisso, tem-se o nome do SNI
+
+  ![Evidência 20](./anexos/evidencias/Flag_15.png)
+- **Resposta:** relay-api.obsidian-cdn.net
 
 ---
 
